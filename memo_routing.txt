@@ -1,0 +1,5 @@
+フロント
+
+/
+/signin                             ワークスペースにサインインするの初期画面
+/workspace/{workspaceId}/signin     ワークスペースを選び終わり、サインインする画面
