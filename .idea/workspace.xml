@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20c0476d-6739-48fc-a574-0bf3c5a30192" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/composerJson.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/frontend/layouts/gettingStarted.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/frontend/pages/signin.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memo_routing.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/backend/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/auth.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +36,8 @@
         <counts>
           <entry key="env" value="1" />
           <entry key="js" value="2" />
-          <entry key="php" value="3" />
+          <entry key="json" value="1" />
+          <entry key="php" value="6" />
           <entry key="txt" value="1" />
           <entry key="vue" value="6" />
         </counts>
@@ -39,59 +46,34 @@
         <counts>
           <entry key=".env file" value="1" />
           <entry key="JavaScript" value="2" />
-          <entry key="PHP" value="3" />
+          <entry key="PHP" value="6" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Vue.js" value="6" />
+          <entry key="composer.json" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="env" value="14" />
+          <entry key="json" value="5" />
+          <entry key="php" value="70" />
           <entry key="txt" value="112" />
-          <entry key="vue" value="451" />
+          <entry key="vue" value="464" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="14" />
+          <entry key="PHP" value="70" />
           <entry key="PLAIN_TEXT" value="112" />
-          <entry key="Vue.js" value="451" />
+          <entry key="Vue.js" value="464" />
+          <entry key="composer.json" value="5" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/routes/api.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/nuxt.config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1189">
-              <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/pages/index.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="9" column="24" selection-end-line="65" />
-              <folding>
-                <element signature="e#1800#1840#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/layouts/default.vue">
           <provider selected="true" editor-type-id="text-editor">
@@ -105,7 +87,7 @@
         <entry file="file://$PROJECT_DIR$/frontend/layouts/gettingStarted.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="348">
-              <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+              <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -119,13 +101,52 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/pages/signin.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+            <state relative-caret-position="435">
+              <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
               <folding>
                 <element signature="e#1484#1490#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/config/jwt.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="238" lean-forward="true" selection-start-line="238" selection-end-line="238" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backend/config/auth.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/app/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="430">
+              <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+              <folding>
+                <element signature="e#23#63#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -144,7 +165,7 @@
         <entry file="file://$PROJECT_DIR$/frontend/.nuxt/router.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="290">
-              <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+              <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -152,19 +173,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/pages/inspire.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="16" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/frontend" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -175,6 +187,9 @@
         <option value="$PROJECT_DIR$/frontend/layouts/gettingStarted.vue" />
         <option value="$PROJECT_DIR$/memo_routing.txt" />
         <option value="$PROJECT_DIR$/frontend/pages/signin.vue" />
+        <option value="$PROJECT_DIR$/backend/composer.json" />
+        <option value="$PROJECT_DIR$/backend/app/User.php" />
+        <option value="$PROJECT_DIR$/backend/config/auth.php" />
       </list>
     </option>
   </component>
@@ -268,11 +283,16 @@
       <path value="$PROJECT_DIR$/backend/vendor/phpdocumentor/type-resolver" />
       <path value="$PROJECT_DIR$/backend/vendor/phpdocumentor/reflection-docblock" />
       <path value="$PROJECT_DIR$/backend/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/backend/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/backend/vendor/tymon/jwt-auth" />
+      <path value="$PROJECT_DIR$/backend/vendor/namshi/jose" />
+      <path value="$PROJECT_DIR$/backend/vendor/lcobucci/jwt" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="209" />
-    <option name="width" value="1718" />
+    <option name="x" value="571" />
+    <option name="width" value="1356" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -294,6 +314,11 @@
             <path>
               <item name="1" type="b2602c69:ProjectViewProjectNode" />
               <item name="1" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -309,6 +334,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="api&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/routes/api.php&#10;config/auth&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/auth.php&#10;jwt&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/jwt.php&#10;user&#9;null&#9;null&#10;jwt.ph&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/jwt.php&#10;composer.json&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/composer.json" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -338,18 +364,18 @@
       <option name="presentableId" value="Default" />
       <updated>1541280257795</updated>
       <workItem from="1541280259163" duration="1641000" />
-      <workItem from="1541284507625" duration="2074000" />
+      <workItem from="1541284507625" duration="2688000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3715000" />
+    <option name="totallyTimeSpent" value="4329000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="209" y="0" width="1718" height="1047" extended-state="0" />
+    <frame x="571" y="0" width="1356" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16525935" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21141975" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -430,7 +456,7 @@
     <entry file="file://$PROJECT_DIR$/frontend/.nuxt/router.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
-          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
@@ -454,7 +480,7 @@
     <entry file="file://$PROJECT_DIR$/frontend/layouts/gettingStarted.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
-          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -467,11 +493,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/pages/signin.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+        <state relative-caret-position="435">
+          <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
           <folding>
             <element signature="e#1484#1490#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <folding>
+            <element signature="e#23#63#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/config/jwt.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="238" lean-forward="true" selection-start-line="238" selection-end-line="238" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/config/auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
         </state>
       </provider>
     </entry>
