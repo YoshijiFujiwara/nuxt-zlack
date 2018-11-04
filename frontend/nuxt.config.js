@@ -31,6 +31,11 @@ module.exports = {
     '~/assets/style/app.styl'
   ],
 
+  // middlewareのために追加
+  router: {
+    middleware: ['clearValidationErrors']
+  },
+
   /*
   ** Plugins to load before mounting the App
   */
