@@ -56,23 +56,28 @@ module.exports = {
 
   // 認証
   auth: {
-    endpoints: {
-      /**
-       * laravel側のapiのルーティングに対応するように書きましょう
-       */
-      login: {
-        url: 'login',
-        method: 'post',
-        propertyName: 'meta.token'
-      },
-      user: {
-        url: 'user',
-        method: 'get',
-        propertyName: 'data'
-      },
-      logout: {
-        url: 'logout',
-        method: 'post'
+    strategies: {
+      local: {
+        endpoints: {
+
+          /**
+           * laravel側のapiのルーティングに対応するように書きましょう
+           */
+          login: {
+            url: 'login',
+            method: 'post',
+            propertyName: "meta.token"
+          },
+          user: {
+            url: 'user',
+            method: 'get',
+            propertyName: 'data'
+          },
+          logout: {
+            url: 'logout',
+            method: 'post'
+          }
+        }
       }
     }
   },
