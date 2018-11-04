@@ -55,7 +55,7 @@
           <entry key="json" value="5" />
           <entry key="php" value="1126" />
           <entry key="txt" value="112" />
-          <entry key="vue" value="1303" />
+          <entry key="vue" value="1484" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -64,7 +64,7 @@
           <entry key="JavaScript" value="619" />
           <entry key="PHP" value="1126" />
           <entry key="PLAIN_TEXT" value="116" />
-          <entry key="Vue.js" value="1303" />
+          <entry key="Vue.js" value="1484" />
           <entry key="composer.json" value="5" />
         </counts>
       </usages-collector>
@@ -149,8 +149,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/layouts/initial.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+            <state relative-caret-position="754">
+              <caret line="65" column="62" selection-start-line="65" selection-start-column="62" selection-end-line="65" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -451,12 +451,12 @@
       <option name="presentableId" value="Default" />
       <updated>1541280257795</updated>
       <workItem from="1541280259163" duration="1641000" />
-      <workItem from="1541284507625" duration="13304000" />
+      <workItem from="1541284507625" duration="13806000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14945000" />
+    <option name="totallyTimeSpent" value="15447000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="225" y="0" width="1702" height="1047" extended-state="0" />
@@ -750,8 +750,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/layouts/initial.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+        <state relative-caret-position="754">
+          <caret line="65" column="62" selection-start-line="65" selection-start-column="62" selection-end-line="65" selection-end-column="62" />
         </state>
       </provider>
     </entry>
