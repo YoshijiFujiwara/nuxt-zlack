@@ -5,9 +5,11 @@
       <change afterPath="$PROJECT_DIR$/frontend/layouts/initial.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/frontend/pages/login.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/frontend/pages/register.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/plugins/axios.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/frontend/plugins/mixins/user.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/frontend/store/auth.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/frontend/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/store/validation.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +32,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="env" value="1" />
-          <entry key="js" value="8" />
+          <entry key="js" value="10" />
           <entry key="json" value="1" />
           <entry key="php" value="27" />
           <entry key="txt" value="1" />
@@ -40,7 +42,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="1" />
-          <entry key="JavaScript" value="8" />
+          <entry key="JavaScript" value="10" />
           <entry key="PHP" value="27" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Vue.js" value="9" />
@@ -51,7 +53,7 @@
         <counts>
           <entry key="dummy" value="4" />
           <entry key="env" value="14" />
-          <entry key="js" value="619" />
+          <entry key="js" value="1294" />
           <entry key="json" value="5" />
           <entry key="php" value="1126" />
           <entry key="txt" value="112" />
@@ -61,7 +63,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="14" />
-          <entry key="JavaScript" value="619" />
+          <entry key="JavaScript" value="1294" />
           <entry key="PHP" value="1126" />
           <entry key="PLAIN_TEXT" value="116" />
           <entry key="Vue.js" value="1883" />
@@ -73,28 +75,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/app/Http/Kernel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/config/cors.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/nuxt.config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+            <state relative-caret-position="430">
+              <caret line="37" column="24" lean-forward="true" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -104,11 +88,29 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/pages/login.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="580">
               <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/store/validation.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="609">
+              <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/plugins/axios.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="11" column="45" lean-forward="true" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -126,7 +128,7 @@
         <entry file="file://$PROJECT_DIR$/frontend/pages/register.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="865">
-              <caret line="31" column="43" lean-forward="true" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
+              <caret line="31" column="43" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -195,10 +197,12 @@
         <option value="$PROJECT_DIR$/frontend/.nuxt/router.js" />
         <option value="$PROJECT_DIR$/frontend/store/auth.js" />
         <option value="$PROJECT_DIR$/frontend/plugins/mixins/user.js" />
-        <option value="$PROJECT_DIR$/frontend/nuxt.config.js" />
         <option value="$PROJECT_DIR$/frontend/layouts/initial.vue" />
         <option value="$PROJECT_DIR$/frontend/pages/register.vue" />
         <option value="$PROJECT_DIR$/frontend/pages/login.vue" />
+        <option value="$PROJECT_DIR$/frontend/store/validation.js" />
+        <option value="$PROJECT_DIR$/frontend/nuxt.config.js" />
+        <option value="$PROJECT_DIR$/frontend/plugins/axios.js" />
       </list>
     </option>
   </component>
@@ -411,7 +415,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="router.js&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/.nuxt/router.js&#10;register.vue&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/pages/register.vue&#10;nuxtcon&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/nuxt.config.js&#10;nuxtc&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/nuxt.config.js&#10;nuxtconf&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/nuxt.config.js&#10;cors.php&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/cors.php&#10;app/http/ke&#9;null&#9;null&#10;kernel&#9;null&#9;null&#10;authcon&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Controllers/AuthController.php&#10;api.php&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/routes/api.php&#10;userlog&#9;null&#9;null&#10;userregi&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Requests/UserRegisterRequest.php&#10;api&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/routes/api.php&#10;config/auth&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/auth.php&#10;jwt&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/jwt.php&#10;user&#9;null&#9;null&#10;jwt.ph&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/jwt.php&#10;composer.json&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/composer.json" />
+    <property name="SearchEverywhereHistoryKey" value="nux&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/nuxt.config.js&#10;router.js&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/.nuxt/router.js&#10;register.vue&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/pages/register.vue&#10;nuxtcon&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/nuxt.config.js&#10;nuxtc&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/nuxt.config.js&#10;nuxtconf&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/nuxt.config.js&#10;cors.php&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/cors.php&#10;app/http/ke&#9;null&#9;null&#10;kernel&#9;null&#9;null&#10;authcon&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Controllers/AuthController.php&#10;api.php&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/routes/api.php&#10;userlog&#9;null&#9;null&#10;userregi&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Requests/UserRegisterRequest.php&#10;api&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/routes/api.php&#10;config/auth&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/auth.php&#10;jwt&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/jwt.php&#10;user&#9;null&#9;null&#10;jwt.ph&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/jwt.php&#10;composer.json&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/composer.json" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -441,18 +445,18 @@
       <option name="presentableId" value="Default" />
       <updated>1541280257795</updated>
       <workItem from="1541280259163" duration="1641000" />
-      <workItem from="1541284507625" duration="14514000" />
+      <workItem from="1541284507625" duration="16142000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16155000" />
+    <option name="totallyTimeSpent" value="17783000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="225" y="0" width="1726" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24069628" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24069628" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -691,13 +695,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/nuxt.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/plugins/mixins/user.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
@@ -721,7 +718,7 @@
     <entry file="file://$PROJECT_DIR$/frontend/pages/register.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="865">
-          <caret line="31" column="43" lean-forward="true" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
+          <caret line="31" column="43" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -729,6 +726,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="580">
           <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/store/validation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/nuxt.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="37" column="24" lean-forward="true" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/plugins/axios.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="11" column="45" lean-forward="true" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
         </state>
       </provider>
     </entry>

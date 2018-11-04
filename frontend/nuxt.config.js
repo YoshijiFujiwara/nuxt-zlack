@@ -36,7 +36,8 @@ module.exports = {
   */
   plugins: [
     '@/plugins/vuetify',
-    '@/plugins/mixins/user.js'
+    '@/plugins/mixins/user.js',
+    '@/plugins/axios.js',
   ],
 
   /*
