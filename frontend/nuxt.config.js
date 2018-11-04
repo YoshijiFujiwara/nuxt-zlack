@@ -43,6 +43,7 @@ module.exports = {
     '@/plugins/vuetify',
     '@/plugins/mixins/user.js',
     "@/plugins/mixins/validation.js",
+    "@/plugins/mixins/workspace.js",
     '@/plugins/axios.js',
   ],
 

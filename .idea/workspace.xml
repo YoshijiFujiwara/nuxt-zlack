@@ -35,20 +35,23 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="env" value="1" />
-          <entry key="js" value="24" />
+          <entry key="js" value="37" />
           <entry key="json" value="1" />
+          <entry key="log" value="1" />
+          <entry key="md" value="3" />
           <entry key="php" value="50" />
           <entry key="txt" value="1" />
-          <entry key="vue" value="28" />
+          <entry key="vue" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="1" />
-          <entry key="JavaScript" value="24" />
+          <entry key="JavaScript" value="37" />
+          <entry key="Markdown" value="3" />
           <entry key="PHP" value="50" />
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Vue.js" value="28" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Vue.js" value="36" />
           <entry key="composer.json" value="1" />
         </counts>
       </usages-collector>
@@ -56,20 +59,20 @@
         <counts>
           <entry key="dummy" value="4" />
           <entry key="env" value="14" />
-          <entry key="js" value="1697" />
+          <entry key="js" value="1989" />
           <entry key="json" value="5" />
-          <entry key="php" value="2791" />
+          <entry key="php" value="2847" />
           <entry key="txt" value="112" />
-          <entry key="vue" value="3793" />
+          <entry key="vue" value="4829" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="14" />
-          <entry key="JavaScript" value="1697" />
-          <entry key="PHP" value="2791" />
+          <entry key="JavaScript" value="1989" />
+          <entry key="PHP" value="2847" />
           <entry key="PLAIN_TEXT" value="116" />
-          <entry key="Vue.js" value="3793" />
+          <entry key="Vue.js" value="4829" />
           <entry key="composer.json" value="5" />
         </counts>
       </usages-collector>
@@ -78,19 +81,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/routes/api.php">
+        <entry file="file://$PROJECT_DIR$/frontend/middleware/clearValidationErrors.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+            <state relative-caret-position="58">
+              <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/store/auth.js">
+        <entry file="file://$PROJECT_DIR$/frontend/middleware/getWorkspaceInfos.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+            <state relative-caret-position="58">
+              <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -98,8 +101,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/plugins/axios.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+            <state relative-caret-position="290">
+              <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/pages/workspaces/_id/index.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/layouts/default.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="609">
+              <caret line="63" column="47" selection-start-line="63" selection-start-column="47" selection-end-line="63" selection-end-column="47" />
+              <folding>
+                <marker date="1541327743761" expanded="true" signature="3676:3993" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -107,8 +131,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/pages/index.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+            <state relative-caret-position="435">
+              <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
               <folding>
                 <element signature="e#1800#1840#0" expanded="true" />
               </folding>
@@ -119,58 +143,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/pages/login.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+            <state relative-caret-position="1189">
+              <caret line="47" selection-start-line="47" selection-end-line="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/app/Http/Controllers/WorkspaceController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="18" column="50" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
-              <folding>
-                <element signature="e#40#85#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/pages/workspaces/index.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/pages/create_workspace.vue">
+        <entry file="file://$PROJECT_DIR$/frontend/store/auth.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="174">
-              <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+              <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/.nuxt/router.js">
+        <entry file="file://$PROJECT_DIR$/frontend/layouts/initial.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="72" column="24" selection-start-line="72" selection-start-column="24" selection-end-line="72" selection-end-column="24" />
+            <state relative-caret-position="128">
+              <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/database/migrations/2018_11_04_0001331_create_user_workspace_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/frontend/store/index.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -186,6 +185,15 @@
     <findStrings>
       <find>your_work</find>
       <find>select_work</find>
+      <find>SET_VALIDATION_ERRORS</find>
+      <find>setErrors</find>
+      <find>seterror</find>
+      <find>auth/user</find>
+      <find>user.</find>
+      <find>user.name</find>
+      <find>iam</find>
+      <find>name</find>
+      <find>welcome</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -207,12 +215,10 @@
         <option value="$PROJECT_DIR$/backend/app/Http/Controllers/AuthController.php" />
         <option value="$PROJECT_DIR$/backend/app/Http/Kernel.php" />
         <option value="$PROJECT_DIR$/frontend/layouts/gettingStarted.vue" />
-        <option value="$PROJECT_DIR$/frontend/store/auth.js" />
         <option value="$PROJECT_DIR$/frontend/plugins/mixins/user.js" />
         <option value="$PROJECT_DIR$/frontend/plugins/mixins/validation.js" />
         <option value="$PROJECT_DIR$/frontend/store/validation.js" />
         <option value="$PROJECT_DIR$/frontend/middleware/clearValidaionMiddleware.js" />
-        <option value="$PROJECT_DIR$/frontend/nuxt.config.js" />
         <option value="$PROJECT_DIR$/frontend/pages/index.vue" />
         <option value="$PROJECT_DIR$/frontend/pages/selectWorkspace.vue" />
         <option value="$PROJECT_DIR$/frontend/.nuxt/router.js" />
@@ -229,16 +235,23 @@
         <option value="$PROJECT_DIR$/backend/app/Http/Requests/UserLoginRequest.php" />
         <option value="$PROJECT_DIR$/backend/app/Http/Requests/WorkspaceCreateRequest.php" />
         <option value="$PROJECT_DIR$/frontend/pages/register.vue" />
-        <option value="$PROJECT_DIR$/frontend/pages/login.vue" />
         <option value="$PROJECT_DIR$/frontend/pages/select_workspace.vue" />
-        <option value="$PROJECT_DIR$/frontend/layouts/initial.vue" />
         <option value="$PROJECT_DIR$/frontend/middleware/guest.js" />
         <option value="$PROJECT_DIR$/frontend/pages/create_workspace.vue" />
         <option value="$PROJECT_DIR$/frontend/plugins/axios.js" />
-        <option value="$PROJECT_DIR$/backend/routes/api.php" />
         <option value="$PROJECT_DIR$/backend/database/migrations/2018_11_04_0001331_create_user_workspace_table.php" />
-        <option value="$PROJECT_DIR$/backend/app/Http/Controllers/WorkspaceController.php" />
         <option value="$PROJECT_DIR$/frontend/pages/workspaces/index.vue" />
+        <option value="$PROJECT_DIR$/backend/routes/api.php" />
+        <option value="$PROJECT_DIR$/backend/app/Http/Controllers/WorkspaceController.php" />
+        <option value="$PROJECT_DIR$/frontend/pages/workspaces/_id/index.vue" />
+        <option value="$PROJECT_DIR$/frontend/plugins/mixins/Workspace.js" />
+        <option value="$PROJECT_DIR$/frontend/store/workspace.js" />
+        <option value="$PROJECT_DIR$/frontend/nuxt.config.js" />
+        <option value="$PROJECT_DIR$/frontend/middleware/getWorkspaceInfos.js" />
+        <option value="$PROJECT_DIR$/frontend/layouts/initial.vue" />
+        <option value="$PROJECT_DIR$/frontend/pages/login.vue" />
+        <option value="$PROJECT_DIR$/frontend/store/auth.js" />
+        <option value="$PROJECT_DIR$/frontend/layouts/default.vue" />
       </list>
     </option>
   </component>
@@ -463,6 +476,14 @@
               <item name="1" type="b2602c69:ProjectViewProjectNode" />
               <item name="1" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="workspaces" type="462c0819:PsiDirectoryNode" />
+              <item name="_id" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="plugins" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -485,7 +506,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="workspa&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Controllers/WorkspaceController.php&#10;worksp&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Controllers/WorkspaceController.php&#10;api.php&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/routes/api.php&#10;router&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/.nuxt/router.js&#10;workspacecon&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Controllers/WorkspaceController.php&#10;api&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/routes/api.php&#10;cha&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Model/Channel.php&#10;router.js&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/.nuxt/router.js&#10;axios&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/plugins/axios.js&#10;login&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/pages/login.vue&#10;regi&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/pages/register.vue&#10;regire&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Requests/UserRegisterRequest.php&#10;nuxtc&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/nuxt.config.js&#10;register&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/pages/register.vue&#10;nuxtcon&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/nuxt.config.js&#10;nux&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/nuxt.config.js&#10;register.vue&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/pages/register.vue&#10;nuxtconf&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/nuxt.config.js&#10;cors.php&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/cors.php&#10;app/http/ke&#9;null&#9;null&#10;kernel&#9;null&#9;null&#10;authcon&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Controllers/AuthController.php&#10;userlog&#9;null&#9;null&#10;userregi&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Requests/UserRegisterRequest.php&#10;config/auth&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/auth.php&#10;jwt&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/jwt.php&#10;user&#9;null&#9;null&#10;jwt.ph&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/jwt.php&#10;composer.json&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/composer.json" />
+    <property name="SearchEverywhereHistoryKey" value="larave.lo&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/storage/logs/laravel-2018-11-04.log&#10;router.js&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/.nuxt/router.js&#10;workspace&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Controllers/WorkspaceController.php&#10;topiccon&#9;null&#9;null&#10;api&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/routes/api.php&#10;workspa&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Controllers/WorkspaceController.php&#10;worksp&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Controllers/WorkspaceController.php&#10;api.php&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/routes/api.php&#10;router&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/.nuxt/router.js&#10;workspacecon&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Controllers/WorkspaceController.php&#10;cha&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Model/Channel.php&#10;axios&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/plugins/axios.js&#10;login&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/pages/login.vue&#10;regi&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/pages/register.vue&#10;regire&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Requests/UserRegisterRequest.php&#10;nuxtc&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/nuxt.config.js&#10;register&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/pages/register.vue&#10;nuxtcon&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/nuxt.config.js&#10;nux&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/nuxt.config.js&#10;register.vue&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/pages/register.vue&#10;nuxtconf&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/nuxt.config.js&#10;cors.php&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/cors.php&#10;app/http/ke&#9;null&#9;null&#10;kernel&#9;null&#9;null&#10;authcon&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Controllers/AuthController.php&#10;userlog&#9;null&#9;null&#10;userregi&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Requests/UserRegisterRequest.php&#10;config/auth&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/auth.php&#10;jwt&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/jwt.php&#10;user&#9;null&#9;null&#10;jwt.ph&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/jwt.php&#10;composer.json&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/composer.json" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -515,12 +536,12 @@
       <option name="presentableId" value="Default" />
       <updated>1541280257795</updated>
       <workItem from="1541280259163" duration="1641000" />
-      <workItem from="1541284507625" duration="32394000" />
+      <workItem from="1541284507625" duration="38716000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34035000" />
+    <option name="totallyTimeSpent" value="40357000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -556,54 +577,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/backend/routes/channels.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/components/Logo.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/memo_routing.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/config/jwt.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="238" selection-start-line="238" selection-end-line="238" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/config/auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/database/migrations/2018_11_04_001330_create_roles_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/database/migrations/2014_10_12_100000_create_password_resets_table.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/app/Http/Resources/UserResource.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="406">
@@ -642,34 +615,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/plugins/mixins/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
-          <folding>
-            <element signature="e#13#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/middleware/clearValidationErrors.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/.nuxt/auth/auth.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
           <caret line="107" column="2" selection-start-line="107" selection-start-column="2" selection-end-line="107" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/nuxt.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -800,72 +749,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/layouts/default.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="94" column="16" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/pages/register.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-150">
           <caret line="60" column="26" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/layouts/initial.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/middleware/guest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/plugins/mixins/validation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-          <folding>
-            <element signature="e#36#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/store/validation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/store/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/store/auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/plugins/axios.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -883,13 +770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/.nuxt/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="72" column="24" selection-start-line="72" selection-start-column="24" selection-end-line="72" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/pages/create_workspace.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
@@ -897,27 +777,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/pages/index.vue">
+    <entry file="file://$PROJECT_DIR$/backend/routes/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-          <folding>
-            <element signature="e#1800#1840#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/pages/login.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+        <state relative-caret-position="290">
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/app/Http/Controllers/WorkspaceController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="18" column="50" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
+        <state relative-caret-position="294">
+          <caret line="33" column="74" selection-start-line="33" selection-start-column="74" selection-end-line="33" selection-end-column="74" />
           <folding>
             <element signature="e#40#85#0#PHP" expanded="true" />
           </folding>
@@ -926,8 +796,176 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/pages/workspaces/index.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+        <state relative-caret-position="-1056">
+          <caret line="18" column="41" lean-forward="true" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/.nuxt/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="98" column="27" lean-forward="true" selection-start-line="98" selection-start-column="27" selection-end-line="98" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/storage/logs/laravel-2018-11-04.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="4146" column="85" lean-forward="true" selection-start-line="4146" selection-start-column="85" selection-end-line="4146" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/layouts/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/store/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/middleware/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/plugins/mixins/validation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+          <folding>
+            <element signature="e#36#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/plugins/mixins/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="8" selection-start-line="8" selection-end-line="21" selection-end-column="14" />
+          <folding>
+            <element signature="e#72#94#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/plugins/mixins/Workspace.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/store/validation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/store/workspace.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/nuxt.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="662">
+          <caret line="45" column="31" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/middleware/guest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/middleware/getWorkspaceInfos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/middleware/clearValidationErrors.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/plugins/axios.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/pages/workspaces/_id/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/store/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/pages/login.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1189">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/layouts/initial.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/store/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/pages/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+          <folding>
+            <element signature="e#1800#1840#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/layouts/default.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="63" column="47" selection-start-line="63" selection-start-column="47" selection-end-line="63" selection-end-column="47" />
+          <folding>
+            <marker date="1541327743761" expanded="true" signature="3676:3993" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

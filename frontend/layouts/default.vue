@@ -1,63 +1,105 @@
 <template>
-  <v-app dark>
+  <v-app>
     <v-navigation-drawer
       :mini-variant="miniVariant"
       :clipped="clipped"
       v-model="drawer"
       fixed
       app
+      dark
+      class="brown darken-1"
     >
       <v-list>
-        <v-list-tile
-          v-for="(item, i) in items"
-          :to="item.to"
-          :key="i"
-          router
-          exact
-        >
+        <!-- ワークスペース名 -->
+        <v-list-tile>
           <v-list-tile-action>
-            <v-icon v-html="item.icon" />
+            <v-icon>group_work</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title v-text="item.title" />
+            <v-list-tile-title v-text="workspace.name" />
           </v-list-tile-content>
         </v-list-tile>
+
+        <!-- チャンネルリスト -->
+        <v-list-tile>
+          <v-list-tile-content>
+            <v-list-tile-title>チャンネル</v-list-tile-title>
+          </v-list-tile-content>
+          <v-list-tile-action>
+            <v-icon>add</v-icon>
+          </v-list-tile-action>
+        </v-list-tile>
+        <div class="pl-2">
+          <v-list-tile v-for="(channel, index) in workspace.channels" :key="index">
+            <v-list-tile-content>
+              <v-list-tile-sub-title># {{channel.name}}</v-list-tile-sub-title>
+            </v-list-tile-content>
+          </v-list-tile>
+        </div>
+
+        <!-- ダイレクトメッセージ -->
+        <v-list-tile>
+          <v-list-tile-content>
+            <v-list-tile-title>ダイレクトメッセージ</v-list-tile-title>
+          </v-list-tile-content>
+          <v-list-tile-action>
+            <v-icon>add</v-icon>
+          </v-list-tile-action>
+        </v-list-tile>
+        <div class="pl-2">
+          <v-list-tile v-for="(user, index) in workspace.users" :key="index">
+            <v-list-tile-content>
+              <v-list-tile-sub-title># {{user.name}} <span v-if="user.name == Iam.name">(自分)</span></v-list-tile-sub-title>
+            </v-list-tile-content>
+          </v-list-tile>
+        </div>
       </v-list>
+
+      <!-- メンバーを招待する -->
+      <v-list-tile>
+        <v-list-tile-action>
+          <v-icon>add</v-icon>
+        </v-list-tile-action>
+        <v-list-tile-content>
+          <v-list-tile-title class="white--text">メンバーを招待する</v-list-tile-title>
+        </v-list-tile-content>
+      </v-list-tile>
     </v-navigation-drawer>
     <v-toolbar
       :clipped-left="clipped"
       fixed
       app
     >
-      <v-toolbar-side-icon @click="drawer = !drawer" />
+      <!--<v-toolbar-side-icon @click="drawer = !drawer" />-->
       <v-btn
         icon
         @click.stop="miniVariant = !miniVariant"
       >
         <v-icon v-html="miniVariant ? 'chevron_right' : 'chevron_left'" />
       </v-btn>
-      <v-btn
-        icon
-        @click.stop="clipped = !clipped"
-      >
-        <v-icon>web</v-icon>
-      </v-btn>
-      <v-btn
-        icon
-        @click.stop="fixed = !fixed"
-      >
-        <v-icon>remove</v-icon>
-      </v-btn>
-      <v-toolbar-title v-text="title"/>
-      <v-btn
-        icon
-        @click.stop="rightDrawer = !rightDrawer"
-      >
-        <v-icon>menu</v-icon>
-      </v-btn>
+      <!--<v-btn-->
+        <!--icon-->
+        <!--@click.stop="clipped = !clipped"-->
+      <!--&gt;-->
+        <!--<v-icon>web</v-icon>-->
+      <!--</v-btn>-->
+      <!--<v-btn-->
+        <!--icon-->
+        <!--@click.stop="fixed = !fixed"-->
+      <!--&gt;-->
+        <!--<v-icon>remove</v-icon>-->
+      <!--</v-btn>-->
+      <v-toolbar-title v-text="workspace.name"/>
+      <!--<v-btn-->
+        <!--icon-->
+        <!--@click.stop="rightDrawer = !rightDrawer"-->
+      <!--&gt;-->
+        <!--<v-icon>menu</v-icon>-->
+      <!--</v-btn>-->
     </v-toolbar>
     <v-content>
       <v-container>
+        {{workspace}}
         <nuxt />
       </v-container>
     </v-content>
@@ -99,8 +141,18 @@
         miniVariant: false,
         right: true,
         rightDrawer: false,
-        title: 'Vuetify.js'
+        title: 'Vuetify.js',
+
+        workspace: {},
       }
+    },
+    async created() {
+      let {data} = await this.$axios.$get(`/workspaces/${this.$route.params.id}`);
+      this.workspace = data;
     }
   }
 </script>
+
+<style scoped>
+
+</style>
