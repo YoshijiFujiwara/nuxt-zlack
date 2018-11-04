@@ -15,13 +15,14 @@ class CreateMessagesTable extends Migration
     {
         Schema::create('messages', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('channel_id')->unsigned()->index();
-            $table->integer('user_id')->unsigned()->index();
             $table->text('body');
+            $table->integer('user_id')->unsigned()->index();
+            $table->integer('messageable_id')->unsigned();
+            $table->string('messageable_type');
+
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->foreign('channel_id')->references('id')->on('channels')->onDelete('cascade');
         });
     }
 

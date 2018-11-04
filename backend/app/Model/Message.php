@@ -11,8 +11,11 @@ class Message extends Model
 
     protected $fillable = ['body'];
 
-    public function channel()
+    /**
+     * 所有しているmessageableモデルの全取得
+     */
+    public function messageable()
     {
-        return $this->belongsTo(Channel::class);
+        return $this->morphTo();
     }
 }

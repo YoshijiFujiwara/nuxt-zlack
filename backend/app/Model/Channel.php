@@ -18,6 +18,6 @@ class Channel extends Model
 
     public function messages()
     {
-        return $this->hasMany(Message::class);
+        return $this->morphMany(Message::class, 'messageable');
     }
 }

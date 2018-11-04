@@ -3,6 +3,7 @@
 namespace App;
 
 use App\Model\Channel;
+use App\Model\Message;
 use App\Model\Workspace;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -53,5 +54,10 @@ class User extends Authenticatable implements JWTSubject
     public function workspaces()
     {
         return $this->belongsToMany(Workspace::class);
+    }
+
+    public function messages()
+    {
+        return $this->morphMany(Message::class, 'messageable');
     }
 }

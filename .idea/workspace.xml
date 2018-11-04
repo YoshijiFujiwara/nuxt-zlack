@@ -40,7 +40,7 @@
           <entry key="json" value="1" />
           <entry key="log" value="2" />
           <entry key="md" value="3" />
-          <entry key="php" value="70" />
+          <entry key="php" value="74" />
           <entry key="txt" value="1" />
           <entry key="vue" value="37" />
         </counts>
@@ -51,7 +51,7 @@
           <entry key="Git file" value="1" />
           <entry key="JavaScript" value="41" />
           <entry key="Markdown" value="3" />
-          <entry key="PHP" value="70" />
+          <entry key="PHP" value="74" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="Vue.js" value="37" />
           <entry key="composer.json" value="1" />
@@ -63,7 +63,7 @@
           <entry key="env" value="14" />
           <entry key="js" value="1989" />
           <entry key="json" value="5" />
-          <entry key="php" value="4614" />
+          <entry key="php" value="4898" />
           <entry key="txt" value="112" />
           <entry key="vue" value="5160" />
         </counts>
@@ -72,7 +72,7 @@
         <counts>
           <entry key=".env file" value="14" />
           <entry key="JavaScript" value="1989" />
-          <entry key="PHP" value="4614" />
+          <entry key="PHP" value="4898" />
           <entry key="PLAIN_TEXT" value="116" />
           <entry key="Vue.js" value="5160" />
           <entry key="composer.json" value="5" />
@@ -82,13 +82,58 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/app/Http/Controllers/ChannelController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="613">
-              <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+            <state relative-caret-position="410">
+              <caret line="22" column="75" selection-start-line="22" selection-start-column="75" selection-end-line="22" selection-end-column="75" />
               <folding>
                 <element signature="e#40#83#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backend/database/migrations/2018_11_04_000808_create_messages_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/app/Model/Channel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+              <folding>
+                <element signature="e#29#54#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/app/Model/Message.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+              <folding>
+                <element signature="e#29#54#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/app/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="584">
+              <caret line="60" column="63" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="63" />
+              <folding>
+                <element signature="e#23#45#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -122,36 +167,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/app/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-              <folding>
-                <element signature="e#23#45#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/app/Http/Controllers/WorkspaceController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="547">
               <caret line="56" column="69" selection-start-line="56" selection-start-column="51" selection-end-line="56" selection-end-column="69" />
               <folding>
                 <element signature="e#40#85#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/app/Policies/WorkspacePolicy.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="38" column="31" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="31" />
-              <folding>
-                <element signature="e#32#56#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -165,24 +186,6 @@
               <folding>
                 <element signature="e#32#54#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/app/Providers/AuthServiceProvider.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="17" column="64" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/storage/logs/laravel-2018-11-04.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="5384" column="116" selection-start-line="5384" selection-start-column="116" selection-end-line="5384" selection-end-column="116" />
             </state>
           </provider>
         </entry>
@@ -232,11 +235,8 @@
         <option value="$PROJECT_DIR$/frontend/pages/selectWorkspace.vue" />
         <option value="$PROJECT_DIR$/frontend/.nuxt/router.js" />
         <option value="$PROJECT_DIR$/backend/database/migrations/2018_11_04_000658_create_channels_table.php" />
-        <option value="$PROJECT_DIR$/backend/database/migrations/2018_11_04_000808_create_messages_table.php" />
         <option value="$PROJECT_DIR$/backend/app/Traits/Orderable.php" />
         <option value="$PROJECT_DIR$/backend/app/Model/Workspace.php" />
-        <option value="$PROJECT_DIR$/backend/app/Model/Message.php" />
-        <option value="$PROJECT_DIR$/backend/app/Model/Channel.php" />
         <option value="$PROJECT_DIR$/backend/app/Http/Resources/ChannelResource.php" />
         <option value="$PROJECT_DIR$/backend/app/Http/Resources/WorkspaceResource.php" />
         <option value="$PROJECT_DIR$/backend/app/Http/Requests/UserRegisterRequest.php" />
@@ -260,7 +260,6 @@
         <option value="$PROJECT_DIR$/frontend/pages/workspaces/_id/index.vue" />
         <option value="$PROJECT_DIR$/backend/app/Http/Requests/WorkspaceUpdateRequest.php" />
         <option value="$PROJECT_DIR$/backend/app/Http/Controllers/WorkspaceController.php" />
-        <option value="$PROJECT_DIR$/backend/app/User.php" />
         <option value="$PROJECT_DIR$/backend/app/Policies/ChannelPolicy.php" />
         <option value="$PROJECT_DIR$/backend/app/Providers/AuthServiceProvider.php" />
         <option value="$PROJECT_DIR$/backend/app/Policies/WorkspacePolicy.php" />
@@ -268,6 +267,10 @@
         <option value="$PROJECT_DIR$/backend/app/Http/Requests/ChannelStoreRequest.php" />
         <option value="$PROJECT_DIR$/backend/app/Http/Requests/ChannelCreateRequest.php" />
         <option value="$PROJECT_DIR$/backend/app/Http/Controllers/ChannelController.php" />
+        <option value="$PROJECT_DIR$/backend/app/Model/Message.php" />
+        <option value="$PROJECT_DIR$/backend/app/User.php" />
+        <option value="$PROJECT_DIR$/backend/app/Model/Channel.php" />
+        <option value="$PROJECT_DIR$/backend/database/migrations/2018_11_04_000808_create_messages_table.php" />
       </list>
     </option>
   </component>
@@ -549,7 +552,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="api&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/routes/api.php&#10;channelcon&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Controllers/ChannelController.php&#10;channel&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Policies/ChannelPolicy.php&#10;authser&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Providers/AuthServiceProvider.php&#10;channe&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Policies/ChannelPolicy.php&#10;user&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/User.php&#10;workspacepo&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Policies/WorkspacePolicy.php&#10;workspa&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Controllers/WorkspaceController.php&#10;workspacecon&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Controllers/WorkspaceController.php&#10;laravel&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/storage/logs/laravel-2018-11-04.log&#10;laravell&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/storage/logs/laravel-2018-11-04.log&#10;laravel.l&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/storage/logs/laravel-2018-11-04.log&#10;channelco&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Controllers/ChannelController.php&#10;channelpo&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Policies/ChannelPolicy.php&#10;User&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/User.php&#10;authse&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Providers/AuthServiceProvider.php&#10;api.php&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/routes/api.php&#10;workspace&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Controllers/WorkspaceController.php&#10;workspac&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Controllers/WorkspaceController.php&#10;user.php&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/User.php&#10;workspacecre&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Requests/WorkspaceCreateRequest.php&#10;workspaceupdate&#9;null&#9;null&#10;larave.lo&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/storage/logs/laravel-2018-11-04.log&#10;router.js&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/.nuxt/router.js&#10;topiccon&#9;null&#9;null&#10;worksp&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Controllers/WorkspaceController.php&#10;router&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/.nuxt/router.js&#10;cha&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Model/Channel.php&#10;axios&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/plugins/axios.js&#10;login&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/pages/login.vue&#10;regi&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/pages/register.vue&#10;regire&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Requests/UserRegisterRequest.php&#10;nuxtc&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/nuxt.config.js&#10;register&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/pages/register.vue&#10;nuxtcon&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/nuxt.config.js&#10;nux&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/nuxt.config.js&#10;register.vue&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/pages/register.vue&#10;nuxtconf&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/nuxt.config.js&#10;cors.php&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/cors.php&#10;app/http/ke&#9;null&#9;null&#10;kernel&#9;null&#9;null&#10;authcon&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Controllers/AuthController.php&#10;userlog&#9;null&#9;null&#10;userregi&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Requests/UserRegisterRequest.php&#10;config/auth&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/auth.php&#10;jwt&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/jwt.php&#10;jwt.ph&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/jwt.php&#10;composer.json&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/composer.json" />
+    <property name="SearchEverywhereHistoryKey" value="channel&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Model/Channel.php&#10;user&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/User.php&#10;message&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Model/Message.php&#10;api&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/routes/api.php&#10;channelcon&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Controllers/ChannelController.php&#10;authser&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Providers/AuthServiceProvider.php&#10;channe&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Policies/ChannelPolicy.php&#10;workspacepo&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Policies/WorkspacePolicy.php&#10;workspa&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Controllers/WorkspaceController.php&#10;workspacecon&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Controllers/WorkspaceController.php&#10;laravel&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/storage/logs/laravel-2018-11-04.log&#10;laravell&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/storage/logs/laravel-2018-11-04.log&#10;laravel.l&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/storage/logs/laravel-2018-11-04.log&#10;channelco&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Controllers/ChannelController.php&#10;channelpo&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Policies/ChannelPolicy.php&#10;User&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/User.php&#10;authse&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Providers/AuthServiceProvider.php&#10;api.php&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/routes/api.php&#10;workspace&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Controllers/WorkspaceController.php&#10;workspac&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Controllers/WorkspaceController.php&#10;user.php&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/User.php&#10;workspacecre&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Requests/WorkspaceCreateRequest.php&#10;workspaceupdate&#9;null&#9;null&#10;larave.lo&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/storage/logs/laravel-2018-11-04.log&#10;router.js&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/.nuxt/router.js&#10;topiccon&#9;null&#9;null&#10;worksp&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Controllers/WorkspaceController.php&#10;router&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/.nuxt/router.js&#10;cha&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Model/Channel.php&#10;axios&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/plugins/axios.js&#10;login&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/pages/login.vue&#10;regi&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/pages/register.vue&#10;regire&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Requests/UserRegisterRequest.php&#10;nuxtc&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/nuxt.config.js&#10;register&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/pages/register.vue&#10;nuxtcon&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/nuxt.config.js&#10;nux&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/nuxt.config.js&#10;register.vue&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/pages/register.vue&#10;nuxtconf&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/nuxt.config.js&#10;cors.php&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/cors.php&#10;app/http/ke&#9;null&#9;null&#10;kernel&#9;null&#9;null&#10;authcon&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Controllers/AuthController.php&#10;userlog&#9;null&#9;null&#10;userregi&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Requests/UserRegisterRequest.php&#10;config/auth&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/auth.php&#10;jwt&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/jwt.php&#10;jwt.ph&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/jwt.php&#10;composer.json&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/composer.json" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -579,18 +582,18 @@
       <option name="presentableId" value="Default" />
       <updated>1541280257795</updated>
       <workItem from="1541280259163" duration="1641000" />
-      <workItem from="1541284507625" duration="46145000" />
+      <workItem from="1541284507625" duration="47015000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47786000" />
+    <option name="totallyTimeSpent" value="48656000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12899786" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24733475" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -620,27 +623,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/backend/database/migrations/2018_11_03_235543_create_workspaces_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="25" column="19" lean-forward="true" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/app/Traits/Orderable.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="377">
           <caret line="13" column="8" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/app/Model/Message.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#29#54#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -891,16 +877,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/app/Model/Channel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding>
-            <element signature="e#29#54#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/config/jwt.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-25" />
@@ -922,16 +898,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
           <caret line="5384" column="116" selection-start-line="5384" selection-start-column="116" selection-end-line="5384" selection-end-column="116" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-          <folding>
-            <element signature="e#23#45#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1002,11 +968,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/app/Http/Controllers/ChannelController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        <state relative-caret-position="410">
+          <caret line="22" column="75" selection-start-line="22" selection-start-column="75" selection-end-line="22" selection-end-column="75" />
           <folding>
             <element signature="e#40#83#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/app/Model/Message.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding>
+            <element signature="e#29#54#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/app/Model/Channel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="e#29#54#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="60" column="63" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="63" />
+          <folding>
+            <element signature="e#23#45#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/database/migrations/2018_11_04_000808_create_messages_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
         </state>
       </provider>
     </entry>
