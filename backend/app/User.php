@@ -20,6 +20,21 @@ class User extends Authenticatable implements JWTSubject
         'password', 'remember_token',
     ];
 
+    /**
+     * workspacePolicyに必要
+     * ワークスペースに所属しているか
+     */
+    public function participatedInWorkspace(Workspace $workspace)
+    {
+        $workspaceUsers = $workspace->users;
+        foreach ($workspaceUsers as $workspaceUser) {
+            if ($this->id === $workspaceUser->id) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     // JWTに必要
     public function getJWTIdentifier()
     {
