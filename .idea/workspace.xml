@@ -4,8 +4,11 @@
     <list default="true" id="20c0476d-6739-48fc-a574-0bf3c5a30192" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/frontend/layouts/gettingStarted.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/frontend/pages/signin.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/backend/composer.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +33,7 @@
           <entry key="env" value="1" />
           <entry key="js" value="2" />
           <entry key="json" value="1" />
-          <entry key="php" value="24" />
+          <entry key="php" value="26" />
           <entry key="txt" value="1" />
           <entry key="vue" value="6" />
         </counts>
@@ -39,7 +42,7 @@
         <counts>
           <entry key=".env file" value="1" />
           <entry key="JavaScript" value="2" />
-          <entry key="PHP" value="24" />
+          <entry key="PHP" value="26" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Vue.js" value="6" />
           <entry key="composer.json" value="1" />
@@ -50,7 +53,7 @@
           <entry key="dummy" value="4" />
           <entry key="env" value="14" />
           <entry key="json" value="5" />
-          <entry key="php" value="1114" />
+          <entry key="php" value="1126" />
           <entry key="txt" value="112" />
           <entry key="vue" value="464" />
         </counts>
@@ -58,7 +61,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="14" />
-          <entry key="PHP" value="1114" />
+          <entry key="PHP" value="1126" />
           <entry key="PLAIN_TEXT" value="116" />
           <entry key="Vue.js" value="464" />
           <entry key="composer.json" value="5" />
@@ -69,20 +72,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/database/migrations/2014_10_12_000000_create_users_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/app/Model/Workspace.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/app/Model/Message.php">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -90,8 +79,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+            <state relative-caret-position="174">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/vendor/laravel/framework/src/Illuminate/Contracts/Http/Kernel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backend/app/Http/Kernel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="522">
+              <caret line="42" column="55" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -113,7 +120,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/app/Http/Controllers/AuthController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="517">
@@ -179,6 +186,7 @@
         <option value="$PROJECT_DIR$/backend/app/Http/Requests/UserLoginRequest.php" />
         <option value="$PROJECT_DIR$/backend/routes/api.php" />
         <option value="$PROJECT_DIR$/backend/app/Http/Controllers/AuthController.php" />
+        <option value="$PROJECT_DIR$/backend/app/Http/Kernel.php" />
       </list>
     </option>
   </component>
@@ -277,6 +285,8 @@
       <path value="$PROJECT_DIR$/backend/vendor/tymon/jwt-auth" />
       <path value="$PROJECT_DIR$/backend/vendor/namshi/jose" />
       <path value="$PROJECT_DIR$/backend/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/backend/vendor/asm89/stack-cors" />
+      <path value="$PROJECT_DIR$/backend/vendor/barryvdh/laravel-cors" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
@@ -365,7 +375,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="authcon&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Controllers/AuthController.php&#10;api.php&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/routes/api.php&#10;userlog&#9;null&#9;null&#10;userregi&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Requests/UserRegisterRequest.php&#10;api&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/routes/api.php&#10;config/auth&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/auth.php&#10;jwt&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/jwt.php&#10;user&#9;null&#9;null&#10;jwt.ph&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/jwt.php&#10;composer.json&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/composer.json" />
+    <property name="SearchEverywhereHistoryKey" value="cors.php&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/cors.php&#10;app/http/ke&#9;null&#9;null&#10;kernel&#9;null&#9;null&#10;authcon&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Controllers/AuthController.php&#10;api.php&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/routes/api.php&#10;userlog&#9;null&#9;null&#10;userregi&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Requests/UserRegisterRequest.php&#10;api&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/routes/api.php&#10;config/auth&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/auth.php&#10;jwt&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/jwt.php&#10;user&#9;null&#9;null&#10;jwt.ph&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/jwt.php&#10;composer.json&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/composer.json" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -395,12 +405,12 @@
       <option name="presentableId" value="Default" />
       <updated>1541280257795</updated>
       <workItem from="1541280259163" duration="1641000" />
-      <workItem from="1541284507625" duration="8501000" />
+      <workItem from="1541284507625" duration="8738000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10142000" />
+    <option name="totallyTimeSpent" value="10379000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="225" y="0" width="1702" height="1047" extended-state="0" />
@@ -631,13 +641,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/app/Http/Controllers/AuthController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="517">
@@ -645,6 +648,27 @@
           <folding>
             <element signature="e#40#79#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/vendor/laravel/framework/src/Illuminate/Contracts/Http/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/app/Http/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="42" column="55" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
         </state>
       </provider>
     </entry>
