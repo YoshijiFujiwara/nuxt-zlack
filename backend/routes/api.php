@@ -16,6 +16,12 @@ Route::group(['prefix' => 'workspaces'], function() {
     Route::group(['prefix' => '/{workspace}/channels'], function() {
         Route::get('/{channel}', 'ChannelController@show')->middleware('auth:api');
         Route::post('/', 'ChannelController@store')->middleware('auth:api');
+
+        // メッセージ投稿
+        Route::group(['prefix' => '/{channel}/messages'], function() {
+            Route::get('/', 'MessageController@indexInChannel')->middleware('auth:api');
+            Route::post('/', 'MessageController@storeToChannel')->middleware('auth:api');
+        });
     });
 
     // ユーザールート(todo: messsagesテーブルを変えないと、、、)

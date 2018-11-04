@@ -56,8 +56,19 @@ class User extends Authenticatable implements JWTSubject
         return $this->belongsToMany(Workspace::class);
     }
 
+    /**
+     * 自分あてのメッセージ
+     */
     public function messages()
     {
         return $this->morphMany(Message::class, 'messageable');
+    }
+
+    /**
+     * 自分が書いたメッセージ
+     */
+    public function wroteMessages()
+    {
+        return $this->hasMany(Message::class);
     }
 }

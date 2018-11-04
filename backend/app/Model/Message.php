@@ -3,6 +3,7 @@
 namespace App\Model;
 
 use App\Traits\Orderable;
+use App\User;
 use Illuminate\Database\Eloquent\Model;
 
 class Message extends Model
@@ -17,5 +18,11 @@ class Message extends Model
     public function messageable()
     {
         return $this->morphTo();
+    }
+
+    // 投稿者
+    public function user()
+    {
+        return $this->belongsTo(User::class);
     }
 }
