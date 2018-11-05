@@ -71,12 +71,12 @@
       app
     >
       <!--<v-toolbar-side-icon @click="drawer = !drawer" />-->
-      <v-btn
-        icon
-        @click.stop="miniVariant = !miniVariant"
-      >
-        <v-icon v-html="miniVariant ? 'chevron_right' : 'chevron_left'" />
-      </v-btn>
+      <!--<v-btn-->
+        <!--icon-->
+        <!--@click.stop="miniVariant = !miniVariant"-->
+      <!--&gt;-->
+        <!--<v-icon v-html="miniVariant ? 'chevron_right' : 'chevron_left'" />-->
+      <!--</v-btn>-->
       <!--<v-btn-->
         <!--icon-->
         <!--@click.stop="clipped = !clipped"-->
@@ -98,7 +98,7 @@
       <!--</v-btn>-->
     </v-toolbar>
     <v-content>
-      <v-container>
+      <v-container class="pb-0 px-0">
         <nuxt :workspace="workspace"/>
       </v-container>
     </v-content>
@@ -117,12 +117,6 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-footer
-      :fixed="fixed"
-      app
-    >
-      <span>&copy; 2017</span>
-    </v-footer>
   </v-app>
 </template>
 
@@ -158,5 +152,4 @@
 </script>
 
 <style scoped>
-
 </style>
