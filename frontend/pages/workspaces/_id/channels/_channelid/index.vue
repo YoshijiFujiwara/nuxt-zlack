@@ -4,11 +4,11 @@
             column
             justify-center
             align-center>
-            <v-flex xs12>
-                <pre>
-                    {{channel}}
-                </pre>
-            </v-flex>
+            <!--<v-flex xs12>-->
+                <!--<pre>-->
+                    <!--{{channel}}-->
+                <!--</pre>-->
+            <!--</v-flex>-->
             <v-jumbotron>
                 <v-container fill-height>
                     <v-layout align-center>
@@ -21,7 +21,7 @@
                 </v-container>
             </v-jumbotron>
 
-            <v-jumbotron height="auto">
+            <v-jumbotron height="auto" style="margin-bottom: 100px;">
                 <v-list three-line>
                     <template v-for="(message, index) in channel.messages">
                         <v-list-tile

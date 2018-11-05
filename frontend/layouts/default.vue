@@ -31,7 +31,7 @@
         </v-list-tile>
         <div class="pl-2">
           <v-list-tile v-for="(channel, index) in workspace.channels" :key="index">
-              <v-list-tile-content @click="moveToChannel(channel.id)">
+              <v-list-tile-content :class="channelListClass(channel.id)" @click="moveToChannel(channel.id)">
                 <v-list-tile-sub-title># {{channel.name}}</v-list-tile-sub-title>
               </v-list-tile-content>
           </v-list-tile>
@@ -48,7 +48,7 @@
         </v-list-tile>
         <div class="pl-2">
           <v-list-tile v-for="(user, index) in workspace.users" :key="index">
-            <v-list-tile-content @click="moveToUserDM(user.id)">
+            <v-list-tile-content :class="userListClass(user.id)" @click="moveToUserDM(user.id)">
               <v-list-tile-sub-title># {{user.name}} <span v-if="user.name == Iam.name">(自分)</span></v-list-tile-sub-title>
             </v-list-tile-content>
           </v-list-tile>
@@ -149,10 +149,37 @@
       },
       moveToUserDM(userId) {
         this.$router.push(`/workspaces/${this.$route.params.id}/users/${userId}`)
-      }
-    }
+      },
+
+      channelListClass(channelId) {
+        if (this.$route.params.channelid !== undefined) {
+          if (this.$route.params.channelid == channelId) {
+            return 'selected';
+          }
+        }
+        return 'clickable';
+      },
+
+      userListClass(userId) {
+        if (this.$route.params.userid) {
+          if (this.$route.params.userid == userId) {
+            return 'selected';
+          }
+        }
+        return 'clickable';
+      },
+    },
   }
 </script>
 
 <style scoped>
+  .clickable {
+    cursor: pointer;
+  }
+  .clickable:hover {
+    background-color: saddlebrown; /*todo: あとでいい感じのいろに*/
+  }
+  .selected {
+    background-color: #3f9ae5;
+  }
 </style>

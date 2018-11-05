@@ -4,13 +4,13 @@
                 column
                 justify-center
                 align-center>
-            <v-flex xs12>
-                <pre>
-                    {{messages}}
-                </pre>
-            </v-flex>
+            <!--<v-flex xs12>-->
+                <!--<pre>-->
+                    <!--{{messages}}-->
+                <!--</pre>-->
+            <!--</v-flex>-->
 
-            <v-jumbotron height="auto">
+            <v-jumbotron height="auto" style="margin-bottom: 100px;">
                 <v-list three-line>
                     <template v-for="(message, index) in messages">
                         <v-list-tile
