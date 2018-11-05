@@ -99,7 +99,7 @@
     </v-toolbar>
     <v-content>
       <v-container class="pb-0 px-0">
-        <nuxt :workspace="workspace"/>
+        <nuxt/>
       </v-container>
     </v-content>
     <v-navigation-drawer

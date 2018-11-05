@@ -42,8 +42,9 @@ module.exports = {
   plugins: [
     '@/plugins/vuetify',
     '@/plugins/mixins/user.js',
-    "@/plugins/mixins/validation.js",
+    '@/plugins/mixins/validation.js',
     '@/plugins/axios.js',
+    // '@/plugins/vue-chat-scroll.js',
   ],
 
   /*
