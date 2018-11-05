@@ -66,7 +66,7 @@
           <entry key="json" value="5" />
           <entry key="php" value="7122" />
           <entry key="txt" value="112" />
-          <entry key="vue" value="10502" />
+          <entry key="vue" value="11193" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -75,7 +75,7 @@
           <entry key="JavaScript" value="2069" />
           <entry key="PHP" value="7122" />
           <entry key="PLAIN_TEXT" value="116" />
-          <entry key="Vue.js" value="10502" />
+          <entry key="Vue.js" value="11193" />
           <entry key="composer.json" value="5" />
         </counts>
       </usages-collector>
@@ -115,11 +115,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/pages/workspaces/_id/channels/_channelid/index.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="535">
-              <caret line="214" column="29" selection-start-line="214" selection-start-column="29" selection-end-line="214" selection-end-column="29" />
+            <state relative-caret-position="418">
+              <caret line="83" column="33" lean-forward="true" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
               <folding>
                 <element signature="n#style#0;n#v-jumbotron#1;n#v-layout#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <marker date="1541403032572" expanded="true" signature="139:263" ph="..." />
+                <element signature="n#style#0;n#v-textarea#0;n#v-form#0;n#v-list-tile-sub-title#0;n#v-list-tile-content#0;n#v-list-tile#0;n#template#0;n#v-list#0;n#v-jumbotron#1;n#v-layout#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <marker date="1541404982740" expanded="true" signature="139:263" ph="..." />
               </folding>
             </state>
           </provider>
@@ -636,12 +637,12 @@
       <option name="presentableId" value="Default" />
       <updated>1541280257795</updated>
       <workItem from="1541280259163" duration="1641000" />
-      <workItem from="1541284507625" duration="75657000" />
+      <workItem from="1541284507625" duration="77733000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77298000" />
+    <option name="totallyTimeSpent" value="79374000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1073,11 +1074,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/pages/workspaces/_id/channels/_channelid/index.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="214" column="29" selection-start-line="214" selection-start-column="29" selection-end-line="214" selection-end-column="29" />
+        <state relative-caret-position="418">
+          <caret line="83" column="33" lean-forward="true" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
           <folding>
             <element signature="n#style#0;n#v-jumbotron#1;n#v-layout#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <marker date="1541403032572" expanded="true" signature="139:263" ph="..." />
+            <element signature="n#style#0;n#v-textarea#0;n#v-form#0;n#v-list-tile-sub-title#0;n#v-list-tile-content#0;n#v-list-tile#0;n#template#0;n#v-list#0;n#v-jumbotron#1;n#v-layout#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <marker date="1541404982740" expanded="true" signature="139:263" ph="..." />
           </folding>
         </state>
       </provider>

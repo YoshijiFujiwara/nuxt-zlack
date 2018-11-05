@@ -22,71 +22,86 @@
             </v-jumbotron>
 
             <v-jumbotron height="auto" style="margin-bottom: 100px;">
-                <v-list three-line>
+                <v-list expand>
                     <!-- メッセージ一覧 -->
                     <template v-for="(message, index) in channel.messages">
                         <span v-if="message.id == hoveredMessageId" class="action-buttons">
-                            <v-btn-toggle>
-                                <v-tooltip top>
-                                  <v-btn slot="activator" flat>
-                                    <v-icon>feedback</v-icon>
-                                  </v-btn>
-                                  <span>リアクションする</span>
-                                </v-tooltip>
-                                <v-tooltip top>
-                                  <v-btn slot="activator" flat>
-                                    <v-icon>chat</v-icon>
-                                  </v-btn>
-                                  <span>スレッドを開始する</span>
-                                </v-tooltip>
-                                <v-tooltip top>
-                                  <v-btn slot="activator" flat>
-                                    <v-icon>arrow_forward</v-icon>
-                                  </v-btn>
-                                  <span>メッセージを共有する</span>
-                                </v-tooltip>
-                                <v-tooltip top>
-                                  <v-btn slot="activator" flat>
-                                    <v-icon>star_border</v-icon>
-                                  </v-btn>
-                                  <span>メッセージにスターを付ける</span>
-                                </v-tooltip>
-                                <v-menu offset-y>
-                                    <v-btn
-                                    slot="activator"
-                                    icon
-                                    >
-                                        <v-icon>more_horiz</v-icon>
-                                    </v-btn>
-                                    <v-list>
-                                        <v-list-tile>
-                                            <v-list-tile-title><v-icon>edit</v-icon> メッセージを編集する</v-list-tile-title>
-                                        </v-list-tile>
-                                        <!-- todo: とりあえず、自分のメッセージだけ削除できるようにしておく -->
-                                        <v-list-tile v-if="message.user.id == Iam.id">
-                                            <v-list-tile-title @click.prevent="openDeleteDialog(message)"><v-icon>delete_forever</v-icon> メッセージを削除する</v-list-tile-title>
-                                        </v-list-tile>
-                                    </v-list>
-                                </v-menu>
-                        </v-btn-toggle>
-                        </span>
+                        <v-btn-toggle>
+                            <v-tooltip top>
+                              <v-btn slot="activator" flat>
+                                <v-icon>feedback</v-icon>
+                              </v-btn>
+                              <span>リアクションする</span>
+                            </v-tooltip>
+                            <v-tooltip top>
+                              <v-btn slot="activator" flat>
+                                <v-icon>chat</v-icon>
+                              </v-btn>
+                              <span>スレッドを開始する</span>
+                            </v-tooltip>
+                            <v-tooltip top>
+                              <v-btn slot="activator" flat>
+                                <v-icon>arrow_forward</v-icon>
+                              </v-btn>
+                              <span>メッセージを共有する</span>
+                            </v-tooltip>
+                            <v-tooltip top>
+                              <v-btn slot="activator" flat>
+                                <v-icon>star_border</v-icon>
+                              </v-btn>
+                              <span>メッセージにスターを付ける</span>
+                            </v-tooltip>
+                            <v-menu offset-y>
+                                <v-btn
+                                        slot="activator"
+                                        icon
+                                >
+                                    <v-icon>more_horiz</v-icon>
+                                </v-btn>
+                                <v-list>
+                                    <v-list-tile>
+                                        <v-list-tile-title @click.prevent="editMessge(message)"><v-icon>edit</v-icon> メッセージを編集する</v-list-tile-title>
+                                    </v-list-tile>
+                                    <!-- todo: とりあえず、自分のメッセージだけ削除できるようにしておく -->
+                                    <v-list-tile v-if="message.user.id == Iam.id">
+                                        <v-list-tile-title @click.prevent="openDeleteDialog(message)"><v-icon>delete_forever</v-icon> メッセージを削除する</v-list-tile-title>
+                                    </v-list-tile>
+                                </v-list>
+                            </v-menu>
+                    </v-btn-toggle>
+                    </span>
                         <v-list-tile
-                            :key="message.id"
-                            avatar
-                            @click=""
-                            @mouseover="showActionButton(message.id)"
-                            class="message-wrapper"
+                                :key="message.id"
+                                avatar
+                                @click=""
+                                @mouseover="showActionButton(message.id)"
+                                class="message-wrapper"
                         >
                             <v-list-tile-avatar>
                                 <v-icon>accessibility_new</v-icon>
                             </v-list-tile-avatar>
 
-                            <v-list-tile-content>
+                            <div>
                                 <v-list-tile-title class="subheading"><span class="font-weight-bold">{{message.user.name}}</span>
                                     <small class="grey--text lighten-1">{{message.created_at}}</small>
                                 </v-list-tile-title>
-                                <p class="black--text">{{message.body}}</p>
-                            </v-list-tile-content>
+                                <!-- 編集対象じゃないとき -->
+                                <v-list-tile-sub-title>
+                                    <p
+                                    class="black--text"
+                                    v-if="tryEditMessage.id != message.id">{{message.body}}</p>
+                                    <!-- 編集対象のメッセージのとき -->
+                                    <v-form v-else>
+                                        <v-textarea
+                                            style="z-index: 1000;"
+                                            outline
+                                            name="input-7-4"
+                                            height="200"
+                                            value="sssssssssssssssssssssssss"
+                                        ></v-textarea>
+                                    </v-form>
+                                </v-list-tile-sub-title>
+                            </div>
                         </v-list-tile>
                     </template>
                 </v-list>
@@ -180,6 +195,9 @@
 
         deleteDialog: false,
 
+        // 編集対象のメッセージ
+        tryEditMessage: '',
+
         // 削除しようとしているメッセージ
         tryDeleteMessage: {}
 
@@ -206,6 +224,11 @@
       openDeleteDialog(message) {
         this.deleteDialog = true;
         this.tryDeleteMessage = message;
+      },
+
+      // 編集用のメッセージの用意
+      editMessge(message) {
+        this.tryEditMessage = message;
       },
 
       // メッセージを削除する
