@@ -21,6 +21,7 @@ Route::group(['prefix' => 'workspaces'], function() {
         Route::group(['prefix' => '/{channel}/messages'], function() {
 //            Route::get('/', 'MessageController@indexInChannel')->middleware('auth:api');
             Route::post('/', 'MessageController@storeToChannel')->middleware('auth:api');
+            Route::delete('/{message}', 'MessageController@destroy')->middleware('auth:api');
         });
     });
 

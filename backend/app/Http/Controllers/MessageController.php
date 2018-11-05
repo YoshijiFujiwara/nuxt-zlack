@@ -62,6 +62,20 @@ class MessageController extends Controller
     }
 
 
+    /**
+     * チャンネル中のメッセージを削除する
+     */
+    public function destroy(Workspace $workspace, Channel $channel, Message $message)
+    {
+        // todo: あとでauthorizeを追加する
+        // そのメッセージが指定されたチャンネルのものか
+        // 自分のメッセージであるかどうか
+
+        $message->delete();
+        return response(null, 204);
+    }
+
+
     // 他のユーザーにDMを投稿する
     public function storeToDM(Request $request, Workspace $workspace, User $user)
     {
