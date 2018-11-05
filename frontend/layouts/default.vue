@@ -31,9 +31,9 @@
         </v-list-tile>
         <div class="pl-2">
           <v-list-tile v-for="(channel, index) in workspace.channels" :key="index">
-            <v-list-tile-content>
-              <v-list-tile-sub-title># {{channel.name}}</v-list-tile-sub-title>
-            </v-list-tile-content>
+              <v-list-tile-content @click="moveToChannel(channel.id)">
+                <v-list-tile-sub-title># {{channel.name}}</v-list-tile-sub-title>
+              </v-list-tile-content>
           </v-list-tile>
         </div>
 
@@ -148,6 +148,11 @@
     async created() {
       let {data} = await this.$axios.$get(`/workspaces/${this.$route.params.id}`);
       this.workspace = data;
+    },
+    methods: {
+      moveToChannel(channelId) {
+        this.$router.push(`/workspaces/${this.$route.params.id}/channels/${channelId}`)
+      }
     }
   }
 </script>

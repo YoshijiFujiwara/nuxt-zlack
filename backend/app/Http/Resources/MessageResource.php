@@ -14,8 +14,8 @@ class MessageResource extends JsonResource
             'user' => $this->user,
             'collocutor' => $this->messageable,
             'messageable_type' => $this->messageable_type,
-            'created_at' => $this->created_at,
-            'updated_at' => $this->updated_at,
+            'created_at' => $this->created_at->diffForHumans(),
+            'updated_at' => $this->updated_at->diffForHumans(),
         ];
     }
 }

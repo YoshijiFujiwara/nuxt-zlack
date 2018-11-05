@@ -2,6 +2,7 @@
 
 namespace App\Http\Resources;
 
+use App\Model\Workspace;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class ChannelResource extends JsonResource
@@ -19,8 +20,8 @@ class ChannelResource extends JsonResource
             'name' => $this->name,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
-            'messages' => $this->messages,
-            'workspace' => $this->workspace,
+            'messages' => MessageResource::collection($this->messages),
+//            'workspace' => new WorkspaceResource($this->workspace),
         ];
     }
 }
