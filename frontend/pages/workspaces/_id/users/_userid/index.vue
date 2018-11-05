@@ -1,29 +1,18 @@
 <template>
     <div>
         <v-layout
-            column
-            justify-center
-            align-center>
+                column
+                justify-center
+                align-center>
             <v-flex xs12>
                 <pre>
-                    {{channel}}
+                    {{messages}}
                 </pre>
             </v-flex>
-            <v-jumbotron>
-                <v-container fill-height>
-                    <v-layout align-center>
-                        <v-flex>
-                            <h3 class="display-3">#{{channel.name}}</h3>
-
-                            <span class="subheading">Lorem ipsum dolor sit amet, pri veniam forensibus id. Vis maluisset molestiae id, ad semper lobortis cum. At impetus detraxit incorrupte usu, repudiare assueverit ex eum, ne nam essent vocent admodum.</span>
-                        </v-flex>
-                    </v-layout>
-                </v-container>
-            </v-jumbotron>
 
             <v-jumbotron height="auto">
                 <v-list three-line>
-                    <template v-for="(message, index) in channel.messages">
+                    <template v-for="(message, index) in messages">
                         <v-list-tile
                             :key="message.id"
                             avatar
@@ -43,24 +32,24 @@
             </v-jumbotron>
         </v-layout>
         <v-footer
-        fixed
-        height="auto"
+                fixed
+                height="auto"
         >
             <v-layout
-            justify-end
-            row
-            wrap
+                    justify-end
+                    row
+                    wrap
             >
                 <v-flex xs9 offset-xs-3 id="message-post-field">
                     <v-form @submit.prevent="createMessage">
                         <v-layout row wrap justify-end align-center>
                             <v-flex xs10>
                                 <v-textarea
-                                v-model="form.messageBody"
-                                outline
-                                name="input-7-4"
-                                auto-grow
-                                rows="1"
+                                        v-model="form.messageBody"
+                                        outline
+                                        name="input-7-4"
+                                        auto-grow
+                                        rows="1"
                                 ></v-textarea>
                             </v-flex>
                             <v-flex xs2>
@@ -79,21 +68,21 @@
     middleware: ['auth'], // ログインしてなければ、ログインページにリダイレクト
     data() {
       return {
-        channel: [],
+        messages: [],
         form: {
           messageBody: ''
         }
       }
     },
     async asyncData({ $axios, params }) {
-      let { data } = await $axios.$get(`/workspaces/${params.id}/channels/${params.channelid}`);
+      let { data } = await $axios.$get(`/workspaces/${params.id}/users/${params.userid}/messages`);
       return {
-        channel: data
+        messages: data
       }
     },
     methods: {
       async createMessage() {
-        await this.$axios.$post(`/workspaces/${this.$route.params.id}/channels/${this.$route.params.channelid}/messages`, {body: this.form.messageBody});
+        await this.$axios.$post(`/workspaces/${this.$route.params.id}/users/${this.$route.params.userid}/messages`, {body: this.form.messageBody});
         this.form.messageBody = '';
       }
     }

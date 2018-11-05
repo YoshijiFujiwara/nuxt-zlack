@@ -48,7 +48,7 @@
         </v-list-tile>
         <div class="pl-2">
           <v-list-tile v-for="(user, index) in workspace.users" :key="index">
-            <v-list-tile-content>
+            <v-list-tile-content @click="moveToUserDM(user.id)">
               <v-list-tile-sub-title># {{user.name}} <span v-if="user.name == Iam.name">(自分)</span></v-list-tile-sub-title>
             </v-list-tile-content>
           </v-list-tile>
@@ -146,6 +146,9 @@
     methods: {
       moveToChannel(channelId) {
         this.$router.push(`/workspaces/${this.$route.params.id}/channels/${channelId}`)
+      },
+      moveToUserDM(userId) {
+        this.$router.push(`/workspaces/${this.$route.params.id}/users/${userId}`)
       }
     }
   }

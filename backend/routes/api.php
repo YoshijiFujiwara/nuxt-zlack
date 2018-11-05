@@ -19,10 +19,19 @@ Route::group(['prefix' => 'workspaces'], function() {
 
         // メッセージ投稿
         Route::group(['prefix' => '/{channel}/messages'], function() {
-            Route::get('/', 'MessageController@indexInChannel')->middleware('auth:api');
+//            Route::get('/', 'MessageController@indexInChannel')->middleware('auth:api');
             Route::post('/', 'MessageController@storeToChannel')->middleware('auth:api');
         });
     });
 
     // ユーザールート(todo: messsagesテーブルを変えないと、、、)
+    Route::group(['prefix' => '/{workspace}/users'], function() {
+        // ユーザーの一覧表示などの機能あるなら、routeを追加すればよい
+
+        // メッセージ投稿
+        Route::group(['prefix' => '/{user}/messages'], function() {
+            Route::post('/', 'MessageController@storeToDM')->middleware('auth:api');
+            Route::get('/', 'MessageController@indexInDM')->middleware('auth:api');
+        });
+    });
 });
