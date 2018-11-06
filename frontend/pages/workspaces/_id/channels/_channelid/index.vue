@@ -27,6 +27,7 @@
                 wrap
                 >
                     <v-flex
+                    style="margin-top: 30px;"
                     v-for="(message, index) in channel.messages"
                     >
                         <!-- アクションボタン集 -->
@@ -76,22 +77,42 @@
                             </v-btn-toggle>
                         </span>
 
-                        <v-layout row wrap>
+                        <v-layout row wrap @mouseover="showActionButton(message.id)">
                             <!-- 左側部分 -->
-                            <v-flex xs1>
+                            <v-flex style="width: 5%;">
                                 <v-icon>accessibility_new</v-icon>
                             </v-flex>
 
                             <!-- 右側部分 -->
-                            <v-flex xs11>
+                            <v-flex style="width: 95%;">
                                 <v-layout column wrap>
                                     <v-flex>
-                                        <span class="font-weight-bold">{{message.user.name}}</span>
+                                        <span class="font-weight-bold title">{{message.user.name}}</span>
                                         <small class="grey--text lighten-1">{{message.created_at}}</small>
                                     </v-flex>
 
-                                    <v-flex>
+                                    <!-- 編集対象ではないとき -->
+                                    <v-flex
+                                    v-if="tryEditMessage.id != message.id"
+                                    style="width: 100%; overflow-wrap: break-word;">
                                         {{message.body}}
+                                    </v-flex>
+
+                                    <!-- 編集するとき -->
+                                    <v-flex
+                                    v-else
+                                    style="width: 100%; overflow-wrap: break-word;">
+                                        <v-form @submit.prevent="updateMessage">
+                                            <v-textarea
+                                            v-model="editForm.messageBody"
+                                            outline
+                                            name="input-7-4"
+                                            ></v-textarea>
+                                            <div style="margin-top: -20px;">
+                                                <v-btn @click="closeEditArea">キャンセル</v-btn>
+                                                <v-btn type="submit" class="success"><v-icon>subdirectory_arrow_left</v-icon>変更を保存する</v-btn>
+                                            </div>
+                                        </v-form>
                                     </v-flex>
                                 </v-layout>
                             </v-flex>
@@ -305,7 +326,11 @@
         tryEditMessage: '',
 
         // 削除しようとしているメッセージ
-        tryDeleteMessage: {}
+        tryDeleteMessage: {},
+
+        editForm: {
+          messageBody: ''
+        }
 
       }
     },
@@ -335,6 +360,23 @@
       // 編集用のメッセージの用意
       editMessge(message) {
         this.tryEditMessage = message;
+        this.editForm.messageBody = message.body;
+      },
+
+      // 編集を中断する
+      closeEditArea() {
+        this.tryEditMessage = {};
+      },
+
+      // 編集内容を保存する
+      async updateMessage() {
+        await this.$axios.$patch(`/workspaces/${this.$route.params.id}/channels/${this.$route.params.channelid}/messages/${this.tryEditMessage.id}`,
+          {body: this.editForm.messageBody});
+
+        // 成功したら編集テキストエリアを閉じる
+        this.tryEditMessage = {};
+
+        // 編集内容をリアルタイムで対象メッセージに反映する
       },
 
       // メッセージを削除する

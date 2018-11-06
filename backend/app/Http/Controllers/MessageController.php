@@ -61,6 +61,17 @@ class MessageController extends Controller
         return new MessageResource($message);
     }
 
+    // todo: 後でアップデート用のリクエストを作成する
+    public function update(Request $request, Workspace $workspace, Channel $channel, Message $message)
+    {
+        // todo: あとで、authorizationを登録する
+        // とりあえず、自分の投稿のメッセージのみ編集が出来るようなポリシーが必要
+
+        $message->body = $request->get('body', $message->body);
+        $message->save();
+
+        return new MessageResource($message);
+    }
 
     /**
      * チャンネル中のメッセージを削除する
