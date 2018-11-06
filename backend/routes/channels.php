@@ -14,3 +14,9 @@
 Broadcast::channel('App.User.{id}', function ($user, $id) {
     return (int) $user->id === (int) $id;
 });
+
+// メッセージ作成時のブロードキャスト
+// todo: あとで、return trueを修正する
+Broadcast::channel('createMessageChannel', function () {
+    return true;
+});

@@ -82,6 +82,8 @@
       <path value="$PROJECT_DIR$/backend/vendor/lcobucci/jwt" />
       <path value="$PROJECT_DIR$/backend/vendor/asm89/stack-cors" />
       <path value="$PROJECT_DIR$/backend/vendor/barryvdh/laravel-cors" />
+      <path value="$PROJECT_DIR$/backend/vendor/paragonie/sodium_compat" />
+      <path value="$PROJECT_DIR$/backend/vendor/pusher/pusher-php-server" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />

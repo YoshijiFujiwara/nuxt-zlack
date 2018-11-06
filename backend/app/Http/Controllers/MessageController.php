@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\CreateMessageEvent;
 use App\Http\Resources\MessageResource;
 use App\Model\Channel;
 use App\Model\Message;
@@ -57,6 +58,9 @@ class MessageController extends Controller
         $message->body = $request->body;
         $message->user()->associate($request->user()); // 投稿者の設定
         $channel->messages()->save($message); // チャンネルに対してメッセージを投稿する
+
+        // リアルタイム通知用のイベント作成
+        broadcast(new CreateMessageEvent($message))->toOthers();
 
         return new MessageResource($message);
     }
