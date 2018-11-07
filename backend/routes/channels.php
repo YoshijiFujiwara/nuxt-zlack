@@ -20,3 +20,8 @@ Broadcast::channel('App.User.{id}', function ($user, $id) {
 Broadcast::channel('createMessageChannel', function () {
     return true;
 });
+
+// そのユーザーがオンラインかどうかに使う
+Broadcast::channel('online', function($user) {
+    return $user;
+});

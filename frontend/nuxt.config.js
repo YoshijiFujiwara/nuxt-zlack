@@ -61,7 +61,8 @@ module.exports = {
   */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
-    baseURL: 'http://zlack_backend_1.test/api'
+    baseURL: 'http://zlack_backend_1.test/api',
+    credentials: false
   },
 
   // 認証

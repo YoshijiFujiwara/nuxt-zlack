@@ -386,16 +386,34 @@
         // todo: あとで、リアクションとか
       }
     },
-    created() {
+    // mountedは必ずクライアント側で呼ばれるので、if(process.browser)が不要になる
+    // 参考：https://qiita.com/hareku/items/ea09602bf40bf0a42040
+    mounted() {
       // サーバーサイドレンダリング時は、windowオブジェクトがないので、エラーが出る
       // やったね！
-      if (process.browser) {
+
         // メッセージ新規作成イベントを受け取る
         window.Echo.channel('createMessageChannel').listen('CreateMessageEvent', (e) => {
             // メッセージの末尾に追加
             this.channel.messages.push(e.message);
           });
-      }
+
+        // window.Echo.join('online')
+        //   .here((users) => {
+        //     console.log('AAAAAAAAAAAAAAAAAa');
+        //   });
+
+      window.Echo.join('online')
+        .here((users) => {
+          //
+        })
+        .joining((user) => {
+          console.log(user);
+        })
+        .leaving((user) => {
+          console.log(user);
+        });
+
     }
   }
 </script>
