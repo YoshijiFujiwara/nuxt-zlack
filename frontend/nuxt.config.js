@@ -43,6 +43,7 @@ module.exports = {
     '@/plugins/vuetify',
     '@/plugins/mixins/user.js',
     '@/plugins/mixins/validation.js',
+    { src: '@/plugins/laravel_echo-pusher.js', ssr: false },
     '@/plugins/axios.js',
     // '@/plugins/vue-chat-scroll.js',
   ],

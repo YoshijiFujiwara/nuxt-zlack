@@ -386,6 +386,16 @@
         // todo: あとで、リアクションとか
       }
     },
+    created() {
+      // サーバーサイドレンダリング時は、windowオブジェクトがないので、エラーが出る
+      // やったね！
+      if (process.browser) {
+        window.Echo.channel('createMessageChannel')
+          .listen('CreateMessageEvent', (e) => {
+            console.log('AAA');
+          });
+      }
+    }
   }
 </script>
 
