@@ -15,8 +15,9 @@ Broadcast::channel('App.User.{id}', function ($user, $id) {
     return (int) $user->id === (int) $id;
 });
 
-// メッセージ作成時のブロードキャスト
-// todo: あとで、return trueを修正する
+// ドキュメントの抜粋（今回は設定しないため）
+// todo: 後でルートの認可を追加する
 Broadcast::channel('createMessageChannel', function () {
     return true;
 });
+
