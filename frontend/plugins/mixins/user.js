@@ -12,7 +12,8 @@ const User = {
       computed: {
         ...mapGetters({
           Iam: 'auth/Iam',
-          authenticated: 'auth/authenticated'
+          authenticated: 'auth/authenticated',
+          state: 'auth/state'
         })
       }
     })

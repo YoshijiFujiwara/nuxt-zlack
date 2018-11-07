@@ -392,7 +392,7 @@
       // サーバーサイドレンダリング時は、windowオブジェクトがないので、エラーが出る
       // やったね！
 
-        // メッセージ新規作成イベントを受け取る
+      // メッセージ新規作成イベントを受け取る
         window.Echo.channel('createMessageChannel').listen('CreateMessageEvent', (e) => {
             // メッセージの末尾に追加
             this.channel.messages.push(e.message);
