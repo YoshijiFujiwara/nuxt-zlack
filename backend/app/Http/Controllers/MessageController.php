@@ -59,10 +59,12 @@ class MessageController extends Controller
         $message->user()->associate($request->user()); // 投稿者の設定
         $channel->messages()->save($message); // チャンネルに対してメッセージを投稿する
 
-        // リアルタイム通知用のイベント作成
-        broadcast(new CreateMessageEvent($message))->toOthers();
+        $newMessageResource = new MessageResource($message);
 
-        return new MessageResource($message);
+        // リアルタイム通知用のイベント作成
+        broadcast(new CreateMessageEvent($newMessageResource))->toOthers();
+
+        return $newMessageResource;
     }
 
     // todo: 後でアップデート用のリクエストを作成する

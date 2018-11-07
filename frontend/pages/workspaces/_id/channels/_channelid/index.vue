@@ -21,6 +21,10 @@
                 </v-container>
             </v-jumbotron>
 
+            <pre>
+                {{ channel.massage }}
+            </pre>
+
             <v-container style="margin-bottom: 100px;">
                 <v-layout
                 column
@@ -234,10 +238,6 @@
                 <!--</v-container>-->
             <!--</v-jumbotron>-->
 
-            <!--<pre>-->
-                <!--{{channel.messages}}-->
-            <!--</pre>-->
-
             <!-- 削除モーダル -->
             <v-dialog
                 v-model="deleteDialog"
@@ -390,9 +390,10 @@
       // サーバーサイドレンダリング時は、windowオブジェクトがないので、エラーが出る
       // やったね！
       if (process.browser) {
-        window.Echo.channel('createMessageChannel')
-          .listen('CreateMessageEvent', (e) => {
-            console.log('AAA');
+        // メッセージ新規作成イベントを受け取る
+        window.Echo.channel('createMessageChannel').listen('CreateMessageEvent', (e) => {
+            // メッセージの末尾に追加
+            this.channel.messages.push(e.message);
           });
       }
     }
