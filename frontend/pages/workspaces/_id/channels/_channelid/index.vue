@@ -403,16 +403,17 @@
         //     console.log('AAAAAAAAAAAAAAAAAa');
         //   });
 
-      window.Echo.join('online')
-        .here((users) => {
-          //
-        })
-        .joining((user) => {
-          console.log(user);
-        })
-        .leaving((user) => {
-          console.log(user);
-        });
+      // どうしてもうまくいかないので、コメントアウト中
+      // window.Echo.join('online')
+      //   .here((users) => {
+      //     //
+      //   })
+      //   .joining((user) => {
+      //     console.log(user);
+      //   })
+      //   .leaving((user) => {
+      //     console.log(user);
+      //   });
 
     }
   }
