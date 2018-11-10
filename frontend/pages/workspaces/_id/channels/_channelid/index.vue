@@ -69,7 +69,7 @@
                                         <v-icon>more_horiz</v-icon>
                                     </v-btn>
                                     <v-list>
-                                        <v-list-tile>
+                                        <v-list-tile v-if="message.user.id == Iam.id">
                                           <v-list-tile-title @click.prevent="editMessge(message)"><v-icon>edit</v-icon> メッセージを編集する</v-list-tile-title>
                                         </v-list-tile>
                                         <!-- todo: とりあえず、自分のメッセージだけ削除できるようにしておく -->
@@ -124,119 +124,6 @@
                     </v-flex>
                 </v-layout>
             </v-container>
-
-            <!--<v-jumbotron height="auto" style="margin-bottom: 100px;">-->
-                <!--<v-container expand>-->
-                    <!--&lt;!&ndash; メッセージ一覧 &ndash;&gt;-->
-                    <!--<template v-for="(message, index) in channel.messages">-->
-                        <!--<span v-if="message.id == hoveredMessageId" class="action-buttons">-->
-                        <!--<v-btn-toggle>-->
-                            <!--<v-tooltip top>-->
-                              <!--<v-btn slot="activator" flat>-->
-                                <!--<v-icon>feedback</v-icon>-->
-                              <!--</v-btn>-->
-                              <!--<span>リアクションする</span>-->
-                            <!--</v-tooltip>-->
-                            <!--<v-tooltip top>-->
-                              <!--<v-btn slot="activator" flat>-->
-                                <!--<v-icon>chat</v-icon>-->
-                              <!--</v-btn>-->
-                              <!--<span>スレッドを開始する</span>-->
-                            <!--</v-tooltip>-->
-                            <!--<v-tooltip top>-->
-                              <!--<v-btn slot="activator" flat>-->
-                                <!--<v-icon>arrow_forward</v-icon>-->
-                              <!--</v-btn>-->
-                              <!--<span>メッセージを共有する</span>-->
-                            <!--</v-tooltip>-->
-                            <!--<v-tooltip top>-->
-                              <!--<v-btn slot="activator" flat>-->
-                                <!--<v-icon>star_border</v-icon>-->
-                              <!--</v-btn>-->
-                              <!--<span>メッセージにスターを付ける</span>-->
-                            <!--</v-tooltip>-->
-                            <!--<v-menu offset-y>-->
-                                <!--<v-btn-->
-                                        <!--slot="activator"-->
-                                        <!--icon-->
-                                <!--&gt;-->
-                                    <!--<v-icon>more_horiz</v-icon>-->
-                                <!--</v-btn>-->
-                                <!--<v-list>-->
-                                    <!--<v-list-tile>-->
-                                        <!--<v-list-tile-title @click.prevent="editMessge(message)"><v-icon>edit</v-icon> メッセージを編集する</v-list-tile-title>-->
-                                    <!--</v-list-tile>-->
-                                    <!--&lt;!&ndash; todo: とりあえず、自分のメッセージだけ削除できるようにしておく &ndash;&gt;-->
-                                    <!--<v-list-tile v-if="message.user.id == Iam.id">-->
-                                        <!--<v-list-tile-title @click.prevent="openDeleteDialog(message)"><v-icon>delete_forever</v-icon> メッセージを削除する</v-list-tile-title>-->
-                                    <!--</v-list-tile>-->
-                                <!--</v-list>-->
-                            <!--</v-menu>-->
-                    <!--</v-btn-toggle>-->
-                    <!--</span>-->
-                    <!--<v-layout-->
-                    <!--row-->
-                    <!--wrap-->
-                    <!--:key="message.id"-->
-                    <!--avatar-->
-                    <!--@click=""-->
-                    <!--@mouseover="showActionButton(message.id)"-->
-                    <!--class="message-wrapper"-->
-                    <!--&gt;-->
-                        <!--&lt;!&ndash; 左のアバター部分 &ndash;&gt;-->
-                        <!--<v-flex xs2>-->
-                            <!--<v-icon>accessibility_new</v-icon>-->
-                        <!--</v-flex>-->
-                        <!--&lt;!&ndash; メッセージ投稿者の名前　時刻　コンテンツ内容 &ndash;&gt;-->
-                        <!--<v-flex xs10>-->
-                            <!--<v-layout column wrap>-->
-                                <!--<v-flex>-->
-                                    <!--<span class="font-weight-bold">{{message.user.name}}</span>-->
-                                    <!--<small class="grey&#45;&#45;text lighten-1">{{message.created_at}}</small>-->
-                                <!--</v-flex>-->
-
-                                <!--<v-flex>-->
-                                    <!--{{message.body}}-->
-                                <!--</v-flex>-->
-                            <!--</v-layout>-->
-                        <!--</v-flex>-->
-                    <!--</v-layout>-->
-                    <!--<v-list-tile-->
-                    <!--:key="message.id"-->
-                    <!--avatar-->
-                    <!--@click=""-->
-                    <!--@mouseover="showActionButton(message.id)"-->
-                    <!--class="message-wrapper"-->
-                    <!--&gt;-->
-                        <!--<v-list-tile-avatar>-->
-                            <!--<v-icon>accessibility_new</v-icon>-->
-                        <!--</v-list-tile-avatar>-->
-
-                        <!--<div>-->
-                            <!--<v-list-tile-title class="subheading"><span class="font-weight-bold">{{message.user.name}}</span>-->
-                                <!--<small class="grey&#45;&#45;text lighten-1">{{message.created_at}}</small>-->
-                            <!--</v-list-tile-title>-->
-                            <!--&lt;!&ndash; 編集対象じゃないとき &ndash;&gt;-->
-                            <!--<v-list-tile-sub-title>-->
-                                <!--<p-->
-                                <!--class="black&#45;&#45;text"-->
-                                <!--v-if="tryEditMessage.id != message.id">{{message.body}}</p>-->
-                                <!--&lt;!&ndash; 編集対象のメッセージのとき &ndash;&gt;-->
-                                <!--<v-form v-else>-->
-                                    <!--<v-textarea-->
-                                        <!--style="z-index: 1000;"-->
-                                        <!--outline-->
-                                        <!--name="input-7-4"-->
-                                        <!--height="200"-->
-                                        <!--value="sssssssssssssssssssssssss"-->
-                                    <!--&gt;</v-textarea>-->
-                                <!--</v-form>-->
-                            <!--</v-list-tile-sub-title>-->
-                        <!--</div>-->
-                    <!--</v-list-tile>-->
-                    <!--</template>-->
-                <!--</v-container>-->
-            <!--</v-jumbotron>-->
 
             <!-- 削除モーダル -->
             <v-dialog
@@ -359,6 +246,8 @@
 
       // 編集用のメッセージの用意
       editMessge(message) {
+        console.log('message');
+        console.log(message);
         this.tryEditMessage = message;
         this.editForm.messageBody = message.body;
       },
@@ -393,10 +282,42 @@
       // やったね！
 
       // メッセージ新規作成イベントを受け取る
-        window.Echo.channel('createMessageChannel').listen('CreateMessageEvent', (e) => {
-            // メッセージの末尾に追加
-            this.channel.messages.push(e.message);
+      window.Echo.channel('createMessageChannel').listen('CreateMessageEvent', (e) => {
+        // メッセージの末尾に追加
+        this.channel.messages.push(e.message);
+      });
+    },
+    mounted() {
+      // todo: 綺麗に書き直す
+        window.Echo.channel('updateMessageChannel').listen('UpdateMessageEvent', (e) => {
+          let obj = this.channel.messages;
+          Object.keys(obj).forEach(function(key) {
+            if (obj[key].id == e.message.id) {
+              obj[key].body = e.message.body;
+            }
           });
+          this.channel.messages = obj;
+        });
+
+
+          // https://stackoverflow.com/questions/7440001/iterate-over-object-keys-in-node-js
+          // var async = {};
+          // async.forEach = function(o, cb) {
+          //   var counter = 0,
+          //     keys = Object.keys(o),
+          //     len = keys.length;
+          //   var next = function() {
+          //     if (counter < len) cb(o[keys[counter++]], next);
+          //   };
+          //   next();
+          // };
+          //
+          // async.forEach(this.channel.messages, function(val, next) {
+          //   if (val.id == e.message.id) {
+          //     val.body = e.message.body;
+          //   }
+          // });
+        // });
 
         // window.Echo.join('online')
         //   .here((users) => {

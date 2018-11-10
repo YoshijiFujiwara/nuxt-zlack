@@ -21,7 +21,11 @@ Broadcast::channel('createMessageChannel', function () {
     return true;
 });
 
-// そのユーザーがオンラインかどうかに使う
-Broadcast::channel('online', function($user) {
-    return $user;
+Broadcast::channel('updateMessageChannel', function () {
+    return true;
 });
+
+// そのユーザーがオンラインかどうかに使う
+//Broadcast::channel('online', function($user) {
+//    return $user;
+//});
