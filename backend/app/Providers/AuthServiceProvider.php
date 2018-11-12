@@ -16,6 +16,7 @@ class AuthServiceProvider extends ServiceProvider
         'App\Model' => 'App\Policies\ModelPolicy',
         // memo: ここも追加した
         'App\Model\Workspace' => 'App\Policies\WorkspacePolicy',
+        'App\Model\Message' => 'App\Policies\MessagePolicy',
     ];
 
     /**

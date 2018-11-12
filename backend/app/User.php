@@ -38,6 +38,15 @@ class User extends Authenticatable implements JWTSubject
         return false;
     }
 
+    /**
+     * MessagePolicy
+     * そのメッセージを書いたか
+     */
+    public function hasTheMessage(Message $message)
+    {
+        return $this->id == $message->user->id;
+    }
+
     // JWTに必要
     public function getJWTIdentifier()
     {

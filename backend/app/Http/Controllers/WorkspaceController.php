@@ -52,7 +52,6 @@ class WorkspaceController extends Controller
 
     public function update(WorkspaceUpdateRequest $request, Workspace $workspace)
     {
-        // AuthServiceProviderへの登録も必要ですね
         // 今のところ、ワークスペースに参加しているユーザーのみ
         $this->authorize('update', $workspace); // workspacePolicyが発動
         $workspace->name = $request->get('name', $workspace->name);

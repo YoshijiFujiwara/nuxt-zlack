@@ -4,7 +4,7 @@
       :mini-variant="miniVariant"
       :clipped="clipped"
       v-model="drawer"
-      fixed
+      absolute
       app
       dark
       class="brown darken-1"
@@ -16,7 +16,26 @@
             <v-icon>group_work</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title v-text="workspace.name" />
+              <v-menu offset-y>
+                <v-btn
+                  slot="activator"
+                  color="primary"
+                  dark
+                >
+                  {{workspace.name}}
+                </v-btn>
+                <v-list>
+                  <v-list-tile @click="signoutFromThisChannel">
+                    <v-list-tile-title>{{workspace.name}}からサインアウト</v-list-tile-title>
+                  </v-list-tile>
+                  <!--<v-list-tile-->
+                  <!--v-for="(myWorkspace, index) in myWorkspaces"-->
+                  <!--v-if="workspace.id != myWorkspace.id"-->
+                  <!--@click="goToChannel(myWorkspace.id)">-->
+                    <!--<v-list-tile-title>{{ myWorkspace.name }}に切り返る</v-list-tile-title>-->
+                  <!--</v-list-tile>-->
+                </v-list>
+              </v-menu>
           </v-list-tile-content>
         </v-list-tile>
 
@@ -105,23 +124,36 @@
       <v-container class="pb-0 px-0">
         <!-- チャンネルを追加するフォーム -->
         <div v-if="addChannelForm">
-          <v-form @submit="addChannel">
-            <v-flex xs12 sm6 md3>
-              <v-text-field
-                outline
-                v-model="channelForm.name"
-                placeholder="チャンネル名を入力"
-              ></v-text-field>
-            </v-flex>
-            <v-flex xs12 sm4 text-xs-center row>
-              <div>
-                <v-btn @click="addChannelForm = false" depressed small>キャンセル</v-btn>
-              </div>
-              <div>
-                <v-btn type="submit" depressed small color="primary">チャンネルを作成</v-btn>
-              </div>
-            </v-flex>
-          </v-form>
+          <v-layout
+          row
+          wrap
+          align-center
+          justify-center
+          >
+            <v-form @submit="addChannel">
+              <v-flex
+              xs10
+              align-self-center
+              class="mx-auto"
+              >
+                <h2 class="mb-3">チャンネルを作成</h2>
+                <v-text-field
+                  style="width: 500px;"
+                  outline
+                  v-model="channelForm.name"
+                  placeholder="チャンネル名を入力(#は不要です)"
+                ></v-text-field>
+              </v-flex>
+              <v-flex xs12 sm4 text-xs-center row>
+                <div>
+                  <v-btn @click="addChannelForm = false" depressed small>キャンセル</v-btn>
+                </div>
+                <div>
+                  <v-btn type="submit" depressed small color="primary">チャンネルを作成</v-btn>
+                </div>
+              </v-flex>
+            </v-form>
+          </v-layout>
         </div>
         <!-- それ以外 -->
         <div v-else>
@@ -154,10 +186,7 @@
         clipped: false,
         drawer: true,
         fixed: false,
-        items: [
-          { icon: 'apps', title: 'Welcome', to: '/' },
-          { icon: 'bubble_chart', title: 'Inspire', to: '/inspire' }
-        ],
+
         miniVariant: false,
         right: true,
         rightDrawer: false,
@@ -167,12 +196,25 @@
         addChannelForm: false,
         channelForm: {
           name: ''
-        }
+        },
+
+        // 一番左上のツールボタン選択時
+        myWorkspaces: [],
       }
     },
     async created() {
-      let {data} = await this.$axios.$get(`/workspaces/${this.$route.params.id}`);
+      var {data} = await this.$axios.$get(`/workspaces/${this.$route.params.id}`);
       this.workspace = data;
+
+      // 参加中のワークスペース
+      var {data} = await this.$axios.$get('/workspaces');
+      this.myWorkspaces = data;
+    },
+    mounted() {
+      window.Echo.join('online')
+        .here((users) => {
+          console.log(users);
+        });
     },
     methods: {
       moveToChannel(channelId) {
@@ -180,6 +222,12 @@
       },
       moveToUserDM(userId) {
         this.$router.push(`/workspaces/${this.$route.params.id}/users/${userId}`)
+      },
+      signoutFromThisChannel() {
+        this.$router.push('/workspaces');
+      },
+      goToChannel(workspaceId) {
+        this.$router.push(`/workspaces/${workspaceId}`);
       },
 
       channelListClass(channelId) {

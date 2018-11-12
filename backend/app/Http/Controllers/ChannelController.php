@@ -21,6 +21,17 @@ class ChannelController extends Controller
     {
         // 今のところ、ワークスペースに参加しているユーザーのみ
         $this->authorize('storeChannel', $workspace); // workspacePolicyが発動
+
+        // 同じ名前のチャンネルがワークスペースにあったらだめ
+        $count = Channel::where([
+            ['workspace_id', '=', $workspace->id],
+            ['name', '=', $request->name],
+        ])->count();
+
+        if ($count > 0) {
+            return abort(400); // とりあえず、リクエストが不正ということで
+        }
+
         $channel = new Channel;
         $channel->name = $request->name;
         $channel->workspace_id = $workspace->id;

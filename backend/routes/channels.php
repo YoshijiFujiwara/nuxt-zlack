@@ -29,7 +29,7 @@ Broadcast::channel('deleteMessageChannel', function () {
     return true;
 });
 
-//// そのユーザーがオンラインかどうかに使う
+// そのユーザーがオンラインかどうかに使う
 //Broadcast::channel('online', function($user) {
 //    return $user;
 //});

@@ -281,10 +281,10 @@
       // メッセージ新規作成イベントを受け取る
       window.Echo.channel('createMessageChannel').listen('CreateMessageEvent', (e) => {
         // メッセージの末尾に追加
+        alert(e.message);
         this.channel.messages.push(e.message);
       });
-    },
-    mounted() {
+
       // todo: 綺麗に書き直す
         window.Echo.channel('updateMessageChannel').listen('UpdateMessageEvent', (e) => {
           let obj = this.channel.messages;
@@ -295,8 +295,7 @@
           });
           this.channel.messages = obj;
         });
-    },
-    mounted() {
+
       // todo: 綺麗に書き直す
       window.Echo.channel('deleteMessageChannel').listen('UpdateMessageEvent', (e) => {
         let obj = this.channel.messages;

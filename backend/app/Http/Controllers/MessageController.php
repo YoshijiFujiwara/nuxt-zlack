@@ -72,8 +72,8 @@ class MessageController extends Controller
     // todo: 後でアップデート用のリクエストを作成する
     public function update(Request $request, Workspace $workspace, Channel $channel, Message $message)
     {
-        // todo: あとで、authorizationを登録する
-        // とりあえず、自分の投稿のメッセージのみ編集が出来るようなポリシーが必要
+        // 自分の投稿のメッセージのみ編集が出来るようなポリシーが必要
+        $this->authorize('update', $message); // messagePolicyが必要
 
         $message->body = $request->get('body', $message->body);
         $message->save();
@@ -109,6 +109,7 @@ class MessageController extends Controller
     {
         // todo: あとで、authorize入れる
         // 同じワークスペースのメンバーでないと投稿出来ないように設定する
+        
 
         // メッセージ作成
         $message = new Message;
