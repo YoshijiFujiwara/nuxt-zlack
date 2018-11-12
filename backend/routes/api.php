@@ -23,6 +23,9 @@ Route::group(['prefix' => 'workspaces'], function() {
             Route::post('/', 'MessageController@storeToChannel')->middleware('auth:api');
             Route::patch('/{message}', 'MessageController@update')->middleware('auth:api');
             Route::delete('/{message}', 'MessageController@destroy')->middleware('auth:api');
+
+            // メッセージに対するスターの付け外し
+            Route::post('/{message}/change_star', 'StarController@changeStar')->middleware('auth:api');
         });
     });
 

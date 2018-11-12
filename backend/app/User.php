@@ -80,4 +80,12 @@ class User extends Authenticatable implements JWTSubject
     {
         return $this->hasMany(Message::class);
     }
+
+    /**
+     * スターを付けたメッセージ
+     */
+    public function starMessages()
+    {
+        return $this->belongsToMany(Message::class, 'stars', 'user_id', 'message_id');
+    }
 }

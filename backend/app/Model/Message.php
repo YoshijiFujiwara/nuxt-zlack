@@ -25,4 +25,10 @@ class Message extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    // この投稿にスターを付けた人
+    public function starUsers()
+    {
+        return $this->belongsToMany(User::class, 'stars', 'user_id', 'message_id');
+    }
 }

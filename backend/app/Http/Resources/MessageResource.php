@@ -14,6 +14,7 @@ class MessageResource extends JsonResource
             'user' => $this->user,
             'collocutor' => $this->messageable,
             'messageable_type' => $this->messageable_type,
+            'star_users' => UserResource::collection($this->starUsers),
             'created_at' => $this->created_at->diffForHumans(),
             'updated_at' => $this->updated_at->diffForHumans(),
         ];

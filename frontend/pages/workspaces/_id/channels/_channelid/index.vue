@@ -281,7 +281,6 @@
       // メッセージ新規作成イベントを受け取る
       window.Echo.channel('createMessageChannel').listen('CreateMessageEvent', (e) => {
         // メッセージの末尾に追加
-        alert(e.message);
         this.channel.messages.push(e.message);
       });
 
@@ -292,7 +291,7 @@
             if (obj[key].id == e.message.id) {
               obj[key].body = e.message.body;
             }
-          });
+s          });
           this.channel.messages = obj;
         });
 
