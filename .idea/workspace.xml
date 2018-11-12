@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20c0476d-6739-48fc-a574-0bf3c5a30192" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/MessageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/MessageController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Providers/EventServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/routes/channels.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/channels.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/layouts/default.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/nuxt.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/nuxt.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/pages/workspaces/_id/channels/_channelid/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/pages/workspaces/_id/channels/_channelid/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/plugins/laravel_echo-pusher.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/plugins/laravel_echo-pusher.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/store/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/store/auth.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,10 +37,11 @@
         <counts>
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -53,14 +50,14 @@
           <entry key="env" value="8" />
           <entry key="gitignore" value="2" />
           <entry key="html" value="1" />
-          <entry key="js" value="98" />
+          <entry key="js" value="100" />
           <entry key="json" value="5" />
-          <entry key="log" value="9" />
+          <entry key="log" value="11" />
           <entry key="md" value="7" />
-          <entry key="php" value="126" />
+          <entry key="php" value="132" />
           <entry key="ts" value="1" />
           <entry key="txt" value="1" />
-          <entry key="vue" value="51" />
+          <entry key="vue" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -69,12 +66,12 @@
           <entry key="Git file" value="2" />
           <entry key="HTML" value="1" />
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="98" />
+          <entry key="JavaScript" value="100" />
           <entry key="Markdown" value="7" />
-          <entry key="PHP" value="127" />
-          <entry key="PLAIN_TEXT" value="10" />
+          <entry key="PHP" value="133" />
+          <entry key="PLAIN_TEXT" value="12" />
           <entry key="TypeScript" value="1" />
-          <entry key="Vue.js" value="51" />
+          <entry key="Vue.js" value="52" />
           <entry key="composer.json" value="4" />
         </counts>
       </usages-collector>
@@ -84,18 +81,18 @@
           <entry key="env" value="31" />
           <entry key="js" value="2765" />
           <entry key="json" value="11" />
-          <entry key="php" value="8186" />
+          <entry key="php" value="8283" />
           <entry key="txt" value="112" />
-          <entry key="vue" value="14448" />
+          <entry key="vue" value="15171" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="31" />
           <entry key="JavaScript" value="2765" />
-          <entry key="PHP" value="8186" />
+          <entry key="PHP" value="8283" />
           <entry key="PLAIN_TEXT" value="116" />
-          <entry key="Vue.js" value="14448" />
+          <entry key="Vue.js" value="15171" />
           <entry key="composer.json" value="11" />
         </counts>
       </usages-collector>
@@ -114,68 +111,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/pages/workspaces/_id/channels/_channelid/index.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="290" column="22" selection-start-line="290" selection-start-column="22" selection-end-line="290" selection-end-column="22" />
+            <state relative-caret-position="464">
+              <caret line="259" column="8" selection-start-line="259" selection-start-column="8" selection-end-line="260" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/app/Listeners/UpdateMessageEventListner.php">
+        <entry file="file://$PROJECT_DIR$/backend/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/app/Model/Channel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/routes/channels.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/app/Events/CreateMessageEvent.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/app/Http/Controllers/MessageController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="111" column="58" selection-start-line="111" selection-start-column="58" selection-end-line="111" selection-end-column="58" />
-              <folding>
-                <element signature="e#40#74#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/app/Events/UpdateMessageEvent.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+            <state relative-caret-position="406">
+              <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -183,8 +132,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/storage/logs/laravel-2018-11-10.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
-              <caret line="330" column="50" selection-start-line="330" selection-start-column="50" selection-end-line="330" selection-end-column="50" />
+            <state relative-caret-position="992">
+              <caret line="2002" lean-forward="true" selection-start-line="2002" selection-end-line="2002" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/layouts/default.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="407">
+              <caret line="196" column="30" lean-forward="true" selection-start-line="196" selection-start-column="30" selection-end-line="196" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -192,20 +150,56 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/app/Providers/EventServiceProvider.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+            <state relative-caret-position="551">
+              <caret line="23" column="65" selection-start-line="23" selection-start-column="65" selection-end-line="23" selection-end-column="65" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/app/Listeners/CreateMessageEventListner.php">
+        <entry file="file://$PROJECT_DIR$/backend/app/Events/DeleteMessageEvent.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+            <state relative-caret-position="551">
+              <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/app/Http/Controllers/MessageController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1943">
+              <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
               <folding>
-                <element signature="e#33#67#0#PHP" expanded="true" />
+                <element signature="e#40#74#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backend/app/Http/Controllers/ChannelController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="24" column="40" lean-forward="true" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/app/Events/CreateMessageEvent.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/app/Events/UpdateMessageEvent.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="841">
+              <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -221,11 +215,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>author</find>
-      <find>moveto</find>
-      <find>nuxt</find>
-      <find>iam</find>
-      <find>dialog</find>
       <find>@mouseover</find>
       <find>edit</find>
       <find>v-model=&quot;edit</find>
@@ -251,18 +240,22 @@
       <find>createmessage</find>
       <find>editmessage</find>
       <find>v-for</find>
+      <find>add</find>
+      <find>console.log</find>
+      <find>delete</find>
+      <find>チャンネル</find>
+      <find>addchannel</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Homestead_Projects\nuxt-zlack\1\frontend</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/frontend" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/backend/database/migrations/2018_11_04_0001331_create_user_workspace_table.php" />
         <option value="$PROJECT_DIR$/frontend/pages/workspaces/index.vue" />
         <option value="$PROJECT_DIR$/frontend/plugins/mixins/Workspace.js" />
         <option value="$PROJECT_DIR$/frontend/store/workspace.js" />
@@ -299,7 +292,6 @@
         <option value="$PROJECT_DIR$/backend/app/Notifications/NewMessageNotification.php" />
         <option value="$PROJECT_DIR$/backend/resources/js/bootstrap.js" />
         <option value="$PROJECT_DIR$/backend/.env" />
-        <option value="$PROJECT_DIR$/frontend/layouts/default.vue" />
         <option value="$PROJECT_DIR$/frontend/nuxt.config.js" />
         <option value="$PROJECT_DIR$/backend/composer.json" />
         <option value="$PROJECT_DIR$/backend/config/cors.php" />
@@ -307,12 +299,14 @@
         <option value="$PROJECT_DIR$/backend/app/Http/Middleware/VerifyCsrfToken.php" />
         <option value="$PROJECT_DIR$/frontend/plugins/mixins/user.js" />
         <option value="$PROJECT_DIR$/frontend/store/auth.js" />
+        <option value="$PROJECT_DIR$/backend/app/Events/UpdateMessageEvent.php" />
         <option value="$PROJECT_DIR$/frontend/plugins/laravel_echo-pusher.js" />
         <option value="$PROJECT_DIR$/backend/routes/channels.php" />
         <option value="$PROJECT_DIR$/backend/app/Providers/EventServiceProvider.php" />
+        <option value="$PROJECT_DIR$/backend/app/Events/DeleteMessageEvent.php" />
         <option value="$PROJECT_DIR$/backend/app/Http/Controllers/MessageController.php" />
-        <option value="$PROJECT_DIR$/backend/app/Events/UpdateMessageEvent.php" />
         <option value="$PROJECT_DIR$/frontend/pages/workspaces/_id/channels/_channelid/index.vue" />
+        <option value="$PROJECT_DIR$/frontend/layouts/default.vue" />
       </list>
     </option>
   </component>
@@ -421,11 +415,10 @@
       <path value="$PROJECT_DIR$/backend/vendor/pusher/pusher-php-server" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="373" />
+    <option name="width" value="1554" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -582,7 +575,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="index&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/pages/workspaces/_id/channels/_channelid/index.vue&#10;messagecon&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Controllers/MessageController.php&#10;eventser&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Providers/EventServiceProvider.php&#10;channels&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/routes/channels.php&#10;laravel&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/storage/logs/laravel-2018-11-10.log&#10;updateme&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Events/UpdateMessageEvent.php&#10;update&#9;ACTION&#9;Vcs.UpdateProject&#10;larave&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/plugins/laravel_echo-pusher.js&#10;user&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/plugins/mixins/user.js&#10;auth&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/store/auth.js&#10;veri&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Middleware/VerifyCsrfToken.php&#10;config/app.p&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/app.php&#10;chann&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/routes/channels.php&#10;lara&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/plugins/laravel_echo-pusher.js&#10;composer&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/composer.json&#10;kernel&#9;null&#9;null&#10;verify&#9;null&#9;null&#10;nuxt&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/nuxt.config.js&#10;default&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/layouts/default.vue&#10;channel&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/routes/channels.php&#10;chan&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/routes/channels.php&#10;.env&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/.env&#10;nuxtcon&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/nuxt.config.js&#10;broadcastser&#9;null&#9;null&#10;messa&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Controllers/MessageController.php&#10;.e&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/.env&#10;messag&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Controllers/MessageController.php&#10;bootstrap&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/resources/js/bootstrap.js&#10;createmes&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Listeners/CreateMessageEventListner.php&#10;app.php&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/app.php&#10;broadcasting.ph&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/broadcasting.php&#10;storage/l&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/storage/logs/laravel-2018-11-06.log&#10;laravelog&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/storage/logs/laravel-2018-11-04.log&#10;message&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Controllers/MessageController.php&#10;channels.php&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/routes/channels.php&#10;createme&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Events/CreateMessageEvent.php&#10;config/ap&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/app.php&#10;bootstrap.js&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/resources/js/bootstrap.js&#10;api.php&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/routes/api.php&#10;channelcon&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Controllers/ChannelController.php&#10;api&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/routes/api.php&#10;defa&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/layouts/default.vue&#10;userdm&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Controllers/UserDMController.php&#10;inde&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/pages/workspaces/_id/channels/_channelid/index.vue&#10;def&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/layouts/default.vue&#10;messages&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/database/migrations/2018_11_04_000808_create_messages_table.php&#10;workspacere&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Resources/WorkspaceResource.php&#10;authser&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Providers/AuthServiceProvider.php&#10;channe&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Policies/ChannelPolicy.php&#10;workspacepo&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Policies/WorkspacePolicy.php" />
+    <property name="SearchEverywhereHistoryKey" value="channel&#9;null&#9;null&#10;channelcon&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Controllers/ChannelController.php&#10;laravel&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/storage/logs/laravel-2018-11-10.log&#10;api&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/routes/api.php&#10;messagecon&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Controllers/MessageController.php&#10;messageconr&#9;null&#9;null&#10;default&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/layouts/default.vue&#10;deleteme&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Events/DeleteMessageEvent.php&#10;delete&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Events/DeleteMessageEvent.php&#10;index&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/pages/workspaces/_id/channels/_channelid/index.vue&#10;channels&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/routes/channels.php&#10;api.php&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/routes/api.php&#10;lara&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/storage/logs/laravel-2018-11-10.log&#10;defaul&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/layouts/default.vue&#10;eventser&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Providers/EventServiceProvider.php&#10;updateme&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Events/UpdateMessageEvent.php&#10;update&#9;ACTION&#9;Vcs.UpdateProject&#10;larave&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/plugins/laravel_echo-pusher.js&#10;user&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/plugins/mixins/user.js&#10;auth&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/store/auth.js&#10;veri&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Middleware/VerifyCsrfToken.php&#10;config/app.p&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/app.php&#10;chann&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/routes/channels.php&#10;composer&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/composer.json&#10;kernel&#9;null&#9;null&#10;verify&#9;null&#9;null&#10;nuxt&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/nuxt.config.js&#10;chan&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/routes/channels.php&#10;.env&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/.env&#10;nuxtcon&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/nuxt.config.js&#10;broadcastser&#9;null&#9;null&#10;messa&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Controllers/MessageController.php&#10;.e&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/.env&#10;messag&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Controllers/MessageController.php&#10;bootstrap&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/resources/js/bootstrap.js&#10;createmes&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Listeners/CreateMessageEventListner.php&#10;app.php&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/app.php&#10;broadcasting.ph&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/broadcasting.php&#10;storage/l&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/storage/logs/laravel-2018-11-06.log&#10;laravelog&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/storage/logs/laravel-2018-11-04.log&#10;message&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Controllers/MessageController.php&#10;channels.php&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/routes/channels.php&#10;createme&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Events/CreateMessageEvent.php&#10;config/ap&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/config/app.php&#10;bootstrap.js&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/resources/js/bootstrap.js&#10;defa&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/layouts/default.vue&#10;userdm&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/app/Http/Controllers/UserDMController.php&#10;inde&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/pages/workspaces/_id/channels/_channelid/index.vue&#10;def&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/frontend/layouts/default.vue&#10;messages&#9;FILE&#9;file://C:/Homestead_Projects/nuxt-zlack/1/backend/database/migrations/2018_11_04_000808_create_messages_table.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../reference/laravel-nuxt-master/laravel-nuxt-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -624,18 +617,19 @@
       <workItem from="1541284507625" duration="79169000" />
       <workItem from="1541488661880" duration="876000" />
       <workItem from="1541671264393" duration="1404000" />
-      <workItem from="1541823195026" duration="6276000" />
+      <workItem from="1541823195026" duration="9180000" />
+      <workItem from="1541981353572" duration="7164000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128494000" />
+    <option name="totallyTimeSpent" value="138562000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="373" y="0" width="1554" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14552239" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -666,15 +660,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontend/.nuxt/utils.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/.nuxt/store.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/.nuxt/server.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/.nuxt/router.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
@@ -744,13 +729,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="17" selection-start-column="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/layouts/default.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="149" selection-start-line="149" selection-end-line="149" />
         </state>
       </provider>
     </entry>
@@ -873,16 +851,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="377">
           <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-          <folding>
-            <element signature="e#72#94#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/store/validation.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/store/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/store/README.md">
@@ -895,48 +867,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/plugins/laravel_echo-pusher.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/app/Model/Channel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/storage/logs/laravel-2018-11-10.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="330" column="50" selection-start-line="330" selection-start-column="50" selection-end-line="330" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/routes/channels.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/app/Http/Controllers/MessageController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="111" column="58" selection-start-line="111" selection-start-column="58" selection-end-line="111" selection-end-column="58" />
-          <folding>
-            <element signature="e#40#74#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/app/Providers/EventServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
         </state>
       </provider>
     </entry>
@@ -957,24 +891,93 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/plugins/laravel_echo-pusher.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/store/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/routes/channels.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/app/Providers/EventServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="23" column="65" selection-start-line="23" selection-start-column="65" selection-end-line="23" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/app/Events/DeleteMessageEvent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/backend/app/Events/CreateMessageEvent.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+        <state relative-caret-position="290">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/app/Events/UpdateMessageEvent.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+        <state relative-caret-position="841">
+          <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/app/Http/Controllers/MessageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1943">
+          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+          <folding>
+            <element signature="e#40#74#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/pages/workspaces/_id/channels/_channelid/index.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="290" column="22" selection-start-line="290" selection-start-column="22" selection-end-line="290" selection-end-column="22" />
+        <state relative-caret-position="464">
+          <caret line="259" column="8" selection-start-line="259" selection-start-column="8" selection-end-line="260" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/storage/logs/laravel-2018-11-10.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="992">
+          <caret line="2002" lean-forward="true" selection-start-line="2002" selection-end-line="2002" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/layouts/default.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="196" column="30" lean-forward="true" selection-start-line="196" selection-start-column="30" selection-end-line="196" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/app/Http/Controllers/ChannelController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="24" column="40" lean-forward="true" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
         </state>
       </provider>
     </entry>

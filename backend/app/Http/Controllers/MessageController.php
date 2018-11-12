@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Events\CreateMessageEvent;
+use App\Events\DeleteMessageEvent;
 use App\Events\UpdateMessageEvent;
 use App\Http\Resources\MessageResource;
 use App\Model\Channel;
@@ -94,7 +95,11 @@ class MessageController extends Controller
         // そのメッセージが指定されたチャンネルのものか
         // 自分のメッセージであるかどうか
 
+//        $tmpMessage = $message;
         $message->delete();
+
+//        broadcast(new DeleteMessageEvent(new MessageResource($tmpMessage)))->toOthers();
+
         return response(null, 204);
     }
 

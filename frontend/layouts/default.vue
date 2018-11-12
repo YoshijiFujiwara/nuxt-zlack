@@ -25,7 +25,7 @@
           <v-list-tile-content>
             <v-list-tile-title>チャンネル</v-list-tile-title>
           </v-list-tile-content>
-          <v-list-tile-action>
+          <v-list-tile-action @click.prevent="addChannelForm = true">
             <v-icon>add</v-icon>
           </v-list-tile-action>
         </v-list-tile>
@@ -103,7 +103,30 @@
     </v-toolbar>
     <v-content>
       <v-container class="pb-0 px-0">
-        <nuxt/>
+        <!-- チャンネルを追加するフォーム -->
+        <div v-if="addChannelForm">
+          <v-form @submit="addChannel">
+            <v-flex xs12 sm6 md3>
+              <v-text-field
+                outline
+                v-model="channelForm.name"
+                placeholder="チャンネル名を入力"
+              ></v-text-field>
+            </v-flex>
+            <v-flex xs12 sm4 text-xs-center row>
+              <div>
+                <v-btn @click="addChannelForm = false" depressed small>キャンセル</v-btn>
+              </div>
+              <div>
+                <v-btn type="submit" depressed small color="primary">チャンネルを作成</v-btn>
+              </div>
+            </v-flex>
+          </v-form>
+        </div>
+        <!-- それ以外 -->
+        <div v-else>
+          <nuxt/>
+        </div>
       </v-container>
     </v-content>
     <v-navigation-drawer
@@ -139,19 +162,21 @@
         right: true,
         rightDrawer: false,
         title: 'Vuetify.js',
-
         workspace: {},
+
+        addChannelForm: false,
+        channelForm: {
+          name: ''
+        }
       }
     },
     async created() {
       let {data} = await this.$axios.$get(`/workspaces/${this.$route.params.id}`);
       this.workspace = data;
-
-
     },
     methods: {
       moveToChannel(channelId) {
-        this.$router.push(`/workspaces/${this.$route.params.id}/channels/${channelId}`)
+        this.$router.push(`/workspaces/${this.$route.params.id}/channels/${channelId}`);
       },
       moveToUserDM(userId) {
         this.$router.push(`/workspaces/${this.$route.params.id}/users/${userId}`)
@@ -174,6 +199,11 @@
         }
         return 'clickable';
       },
+
+      // チャンネルを追加する
+      async addChannel() {
+        await this.$axios.$post(`/workspaces/${this.$route.params.id}/channels`, {name: this.channelForm.name});
+      },
     },
   }
 </script>
@@ -183,7 +213,7 @@
     cursor: pointer;
   }
   .clickable:hover {
-    background-color: saddlebrown; /*todo: あとでいい感じのいろに*/
+    background-color: saddlebrown; /* todo: あとでいい感じのいろに */
   }
   .selected {
     background-color: #3f9ae5;

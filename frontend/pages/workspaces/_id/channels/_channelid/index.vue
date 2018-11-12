@@ -246,8 +246,6 @@
 
       // 編集用のメッセージの用意
       editMessge(message) {
-        console.log('message');
-        console.log(message);
         this.tryEditMessage = message;
         this.editForm.messageBody = message.body;
       },
@@ -270,9 +268,8 @@
 
       // メッセージを削除する
       async deleteMessage(messageId) {
+        console.log(this.tryDeleteMessage);
         await this.$axios.$delete(`/workspaces/${this.$route.params.id}/channels/${this.$route.params.channelid}/messages/${messageId}`);
-
-        // todo: あとで、リアクションとか
       }
     },
     // mountedは必ずクライアント側で呼ばれるので、if(process.browser)が不要になる
@@ -298,44 +295,18 @@
           });
           this.channel.messages = obj;
         });
-
-
-          // https://stackoverflow.com/questions/7440001/iterate-over-object-keys-in-node-js
-          // var async = {};
-          // async.forEach = function(o, cb) {
-          //   var counter = 0,
-          //     keys = Object.keys(o),
-          //     len = keys.length;
-          //   var next = function() {
-          //     if (counter < len) cb(o[keys[counter++]], next);
-          //   };
-          //   next();
-          // };
-          //
-          // async.forEach(this.channel.messages, function(val, next) {
-          //   if (val.id == e.message.id) {
-          //     val.body = e.message.body;
-          //   }
-          // });
-        // });
-
-        // window.Echo.join('online')
-        //   .here((users) => {
-        //     console.log('AAAAAAAAAAAAAAAAAa');
-        //   });
-
-      // どうしてもうまくいかないので、コメントアウト中
-      // window.Echo.join('online')
-      //   .here((users) => {
-      //     //
-      //   })
-      //   .joining((user) => {
-      //     console.log(user);
-      //   })
-      //   .leaving((user) => {
-      //     console.log(user);
-      //   });
-
+    },
+    mounted() {
+      // todo: 綺麗に書き直す
+      window.Echo.channel('deleteMessageChannel').listen('UpdateMessageEvent', (e) => {
+        let obj = this.channel.messages;
+        Object.keys(obj).forEach(function(key) {
+          if (obj[key].id == e.message.id) {
+            obj[key] = null;
+          }
+        });
+        this.channel.messages = obj;
+      });
     }
   }
 </script>
